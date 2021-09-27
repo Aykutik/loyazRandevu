@@ -31,6 +31,7 @@ namespace LOYAZ.Formlar.Teknikservis
         {
             this.components = new System.ComponentModel.Container();
             this.gridControlRandevuEkrani = new DevExpress.XtraGrid.GridControl();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gridViewRandevuEkrani = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -39,19 +40,20 @@ namespace LOYAZ.Formlar.Teknikservis
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlRandevuEkrani)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewRandevuEkrani)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewRandevuEkrani)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlRandevuEkrani
             // 
             this.gridControlRandevuEkrani.DataSource = this.bindingSource1;
-            this.gridControlRandevuEkrani.Location = new System.Drawing.Point(12, 12);
+            this.gridControlRandevuEkrani.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlRandevuEkrani.Location = new System.Drawing.Point(0, 0);
             this.gridControlRandevuEkrani.MainView = this.gridViewRandevuEkrani;
             this.gridControlRandevuEkrani.Name = "gridControlRandevuEkrani";
-            this.gridControlRandevuEkrani.Size = new System.Drawing.Size(911, 607);
+            this.gridControlRandevuEkrani.Size = new System.Drawing.Size(1043, 659);
             this.gridControlRandevuEkrani.TabIndex = 0;
             this.gridControlRandevuEkrani.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewRandevuEkrani});
@@ -74,7 +76,7 @@ namespace LOYAZ.Formlar.Teknikservis
             this.gridColumn7});
             this.gridViewRandevuEkrani.GridControl = this.gridControlRandevuEkrani;
             this.gridViewRandevuEkrani.Name = "gridViewRandevuEkrani";
-            this.gridViewRandevuEkrani.RowHeight = 80;
+            this.gridViewRandevuEkrani.RowHeight = 110;
             // 
             // gridColumn1
             // 
@@ -87,7 +89,7 @@ namespace LOYAZ.Formlar.Teknikservis
             this.gridColumn1.OptionsColumn.ReadOnly = true;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 146;
+            this.gridColumn1.Width = 266;
             // 
             // gridColumn2
             // 
@@ -98,11 +100,11 @@ namespace LOYAZ.Formlar.Teknikservis
             // gridColumn3
             // 
             this.gridColumn3.Caption = "MUSTERİ AD SOYAD";
-            this.gridColumn3.FieldName = "MUSTERİAD";
+            this.gridColumn3.FieldName = "musteriad";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 1;
-            this.gridColumn3.Width = 546;
+            this.gridColumn3.Width = 759;
             // 
             // gridColumn4
             // 
@@ -128,11 +130,21 @@ namespace LOYAZ.Formlar.Teknikservis
             this.gridColumn7.FieldName = "id";
             this.gridColumn7.Name = "gridColumn7";
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(907, 0);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.TabIndex = 1;
+            this.simpleButton1.Text = "simpleButton1";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
             // frm_ts_randevuEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1043, 659);
+            this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.gridControlRandevuEkrani);
             this.Name = "frm_ts_randevuEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -140,8 +152,8 @@ namespace LOYAZ.Formlar.Teknikservis
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_ts_randevuEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlRandevuEkrani)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewRandevuEkrani)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewRandevuEkrani)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -158,5 +170,6 @@ namespace LOYAZ.Formlar.Teknikservis
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

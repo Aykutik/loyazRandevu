@@ -16,7 +16,7 @@ namespace LOYAZ
     {
         public MySqlConnection bağlantı()
         {
-            string bağlantıadresi = "Server = loyaz.net; Database = u477970783_tanlas; uid = u477970783_aykutik; Password = aykuT18092007";
+            string bağlantıadresi = "Server = loyaz.net; Database = u477970783_tanlas; Convert Zero Datetime=true; uid = u477970783_aykutik; Password = aykuT18092007";
             //string dosyaadı = "Sytem.Memory.sq.dll";
 
             //string yol = "" + Application.StartupPath + @"\\" + dosyaadı + "";

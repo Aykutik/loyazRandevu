@@ -149,6 +149,7 @@
             this.btn_pdf_tümü = new DevExpress.XtraBars.BarButtonItem();
             this.btn_raporol_devam = new DevExpress.XtraBars.BarButtonItem();
             this.btn_FormYükle = new DevExpress.XtraBars.BarButtonItem();
+            this.btnRandevuEkrani = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup_servisaç = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -161,6 +162,7 @@
             this.ribbonPageGroup_servisformuyükle = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup_silinensergör = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.panelControl_tabcontrol = new DevExpress.XtraEditors.PanelControl();
@@ -185,8 +187,6 @@
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btnRandevuEkrani = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.İ)).BeginInit();
             this.İ.SuspendLayout();
             this.xtraTabPage_devam.SuspendLayout();
@@ -606,6 +606,8 @@
             this.gridColumn15.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn15.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn15.Caption = "Tarih";
+            this.gridColumn15.DisplayFormat.FormatString = "d";
+            this.gridColumn15.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn15.FieldName = "tarih";
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.Visible = true;
@@ -1439,6 +1441,13 @@
             this.btn_FormYükle.Name = "btn_FormYükle";
             this.btn_FormYükle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_topluFormYükle_ItemClick);
             // 
+            // btnRandevuEkrani
+            // 
+            this.btnRandevuEkrani.Caption = "RANDEVU EKANI";
+            this.btnRandevuEkrani.Id = 30;
+            this.btnRandevuEkrani.Name = "btnRandevuEkrani";
+            this.btnRandevuEkrani.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRandevuEkrani_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1537,6 +1546,12 @@
             // 
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.Text = "ribbonPageGroup7";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnRandevuEkrani);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
             // 
             // applicationMenu1
             // 
@@ -1792,19 +1807,6 @@
             // ribbonPageGroup9
             // 
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.btnRandevuEkrani);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
-            // 
-            // btnRandevuEkrani
-            // 
-            this.btnRandevuEkrani.Caption = "RANDEVU EKANI";
-            this.btnRandevuEkrani.Id = 30;
-            this.btnRandevuEkrani.Name = "btnRandevuEkrani";
-            this.btnRandevuEkrani.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRandevuEkrani_ItemClick);
             // 
             // panel_ts_anasayfa
             // 
