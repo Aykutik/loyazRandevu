@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F509182-EBC8-47EF-8A70-CE73697502C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LOYAZ</RootNamespace>
+    <AssemblyName>LOYAZ</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'IQT|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\IQT\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942" />
+    <Reference Include="DevExpress.BonusSkins.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604" />
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d" />
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_anasayfa_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_anasayfa_form.Designer.cs">
+      <DependentUpon>frm_anasayfa_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ts_servisgüncelle_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ts_servisgüncelle_frm.Designer.cs">
+      <DependentUpon>frm_ts_servisgüncelle_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ms_yenimüşteri_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ms_yenimüşteri_frm.Designer.cs">
+      <DependentUpon>frm_ms_yenimüşteri_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ts_yeniservis_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ts_yeniservis_frm.Designer.cs">
+      <DependentUpon>frm_ts_yeniservis_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lozyaDataSet1Local.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lozyaDataSet1Local.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_anasayfa_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_anasayfa_panel.Designer.cs">
+      <DependentUpon>frm_anasayfa_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ts_ariza_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ts_ariza_frm.Designer.cs">
+      <DependentUpon>frm_ts_ariza_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ayarlar_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ayarlar_panel.Designer.cs">
+      <DependentUpon>frm_ayarlar_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ts_ürün_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ts_ürün_frm.Designer.cs">
+      <DependentUpon>frm_ts_ürün_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ms_anasayfa_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ms_anasayfa_panel.Designer.cs">
+      <DependentUpon>frm_ms_anasayfa_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_st_anasayfa_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_st_anasayfa_panel.Designer.cs">
+      <DependentUpon>frm_st_anasayfa_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_stk_anasayfa_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_stk_anasayfa_panel.Designer.cs">
+      <DependentUpon>frm_stk_anasayfa_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ts_anasayfa_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ts_anasayfa_panel.Designer.cs">
+      <DependentUpon>frm_ts_anasayfa_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raporlar\ts\rpr_ts_tümü.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Raporlar\ts\rpr_ts_tümü.Designer.cs">
+      <DependentUpon>rpr_ts_tümü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlbağlantısı.cs" />
+    <EmbeddedResource Include="frm_anasayfa_form.resx">
+      <DependentUpon>frm_anasayfa_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ts_servisgüncelle_frm.resx">
+      <DependentUpon>frm_ts_servisgüncelle_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ms_yenimüşteri_frm.resx">
+      <DependentUpon>frm_ms_yenimüşteri_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ts_yeniservis_frm.resx">
+      <DependentUpon>frm_ts_yeniservis_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_anasayfa_panel.resx">
+      <DependentUpon>frm_anasayfa_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ts_ariza_frm.resx">
+      <DependentUpon>frm_ts_ariza_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ayarlar_panel.resx">
+      <DependentUpon>frm_ayarlar_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ts_ürün_frm.resx">
+      <DependentUpon>frm_ts_ürün_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ms_anasayfa_panel.resx">
+      <DependentUpon>frm_ms_anasayfa_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_st_anasayfa_panel.resx">
+      <DependentUpon>frm_st_anasayfa_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_stk_anasayfa_panel.resx">
+      <DependentUpon>frm_stk_anasayfa_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ts_anasayfa_panel.resx">
+      <DependentUpon>frm_ts_anasayfa_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Raporlar\ts\rpr_ts_tümü.resx">
+      <DependentUpon>rpr_ts_tümü.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="lozyaDataSet1Local.xsc">
+      <DependentUpon>lozyaDataSet1Local.xsd</DependentUpon>
+    </None>
+    <None Include="lozyaDataSet1Local.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lozyaDataSet1Local.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lozyaDataSet1Local.xss">
+      <DependentUpon>lozyaDataSet1Local.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

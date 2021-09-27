@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="lozyaDataSet1Local" targetNamespace="http://tempuri.org/lozyaDataSet1Local.xsd" xmlns:mstns="http://tempuri.org/lozyaDataSet1Local.xsd" xmlns="http://tempuri.org/lozyaDataSet1Local.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="lozyaConnectionString1Local" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="lozyaConnectionString1Local (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LOYAZ.Properties.Settings.GlobalReference.Default.lozyaConnectionString1Local" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ts_servis_güncellemeTableAdapter" GeneratorDataComponentClassName="ts_servis_güncellemeTableAdapter" Name="ts_servis_güncelleme" UserDataComponentName="ts_servis_güncellemeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lozyaConnectionString1Local (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `servisid`, `islem`, `tarih`, `saat`, `kullanici`, `sil`, `id` FROM `ts_servis_güncelleme`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="servisid" DataSetColumn="servisid" />
+              <Mapping SourceColumn="islem" DataSetColumn="islem" />
+              <Mapping SourceColumn="tarih" DataSetColumn="tarih" />
+              <Mapping SourceColumn="saat" DataSetColumn="saat" />
+              <Mapping SourceColumn="kullanici" DataSetColumn="kullanici" />
+              <Mapping SourceColumn="sil" DataSetColumn="sil" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ts_servis_güncelleme1TableAdapter" GeneratorDataComponentClassName="ts_servis_güncelleme1TableAdapter" Name="ts_servis_güncelleme1" UserDataComponentName="ts_servis_güncelleme1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lozyaConnectionString1Local (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `servisid`, `islem`, `tarih`, `saat`, `kullanici`, `sil`, `id` FROM `ts_servis_güncelleme`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="servisid" DataSetColumn="servisid" />
+              <Mapping SourceColumn="islem" DataSetColumn="islem" />
+              <Mapping SourceColumn="tarih" DataSetColumn="tarih" />
+              <Mapping SourceColumn="saat" DataSetColumn="saat" />
+              <Mapping SourceColumn="kullanici" DataSetColumn="kullanici" />
+              <Mapping SourceColumn="sil" DataSetColumn="sil" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ayarlarTableAdapter" GeneratorDataComponentClassName="ayarlarTableAdapter" Name="ayarlar" UserDataComponentName="ayarlarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lozyaConnectionString1Local (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `raporstili`, `id` FROM `ayarlar`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="raporstili" DataSetColumn="raporstili" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="firmaTableAdapter" GeneratorDataComponentClassName="firmaTableAdapter" Name="firma" UserDataComponentName="firmaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lozyaConnectionString1Local (Settings)" DbObjectName="lozya.firma" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `firma` (`firmadad`) VALUES (@p1)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="firmadad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `firmadad` FROM `firma`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="firmadad" DataSetColumn="firmadad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="musterilerTableAdapter" GeneratorDataComponentClassName="musterilerTableAdapter" Name="musteriler" UserDataComponentName="musterilerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lozyaConnectionString1Local (Settings)" DbObjectName="lozya.musteriler" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `musteriler` (`musteriadsoyad`, `eposta`, `iletisim`, `adres`) VALUES (@p1, @p2, @p3, @p4)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="musteriadsoyad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="eposta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="iletisim" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adres" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `musteriadsoyad`, `eposta`, `iletisim`, `adres`, `id` FROM `musteriler`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="musteriadsoyad" DataSetColumn="musteriadsoyad" />
+              <Mapping SourceColumn="eposta" DataSetColumn="eposta" />
+              <Mapping SourceColumn="iletisim" DataSetColumn="iletisim" />
+              <Mapping SourceColumn="adres" DataSetColumn="adres" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ts_arizaTableAdapter" GeneratorDataComponentClassName="ts_arizaTableAdapter" Name="ts_ariza" UserDataComponentName="ts_arizaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lozyaConnectionString1Local (Settings)" DbObjectName="lozya.ts_ariza" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `ts_ariza` (`ad`, `urun`) VALUES (@p1, @p2)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="urun" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ad`, `urun`, `id` FROM `ts_ariza`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ad" DataSetColumn="ad" />
+              <Mapping SourceColumn="urun" DataSetColumn="urun" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ts_markaTableAdapter" GeneratorDataComponentClassName="ts_markaTableAdapter" Name="ts_marka" UserDataComponentName="ts_markaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lozyaConnectionString1Local (Settings)" DbObjectName="lozya.ts_marka" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `ts_marka` (`ad`, `urun`) VALUES (@p1, @p2)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="urun" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ad`, `urun`, `id` FROM `ts_marka`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ad" DataSetColumn="ad" />
+              <Mapping SourceColumn="urun" DataSetColumn="urun" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ts_modelTableAdapter" GeneratorDataComponentClassName="ts_modelTableAdapter" Name="ts_model" UserDataComponentName="ts_modelTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lozyaConnectionString1Local (Settings)" DbObjectName="lozya.ts_model" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `ts_model` (`ad`, `marka`) VALUES (@p1, @p2)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="marka" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ad`, `marka`, `id` FROM `ts_model`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ad" DataSetColumn="ad" />
+              <Mapping SourceColumn="marka" DataSetColumn="marka" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ts_servisTableAdapter" GeneratorDataComponentClassName="ts_servisTableAdapter" Name="ts_servis" UserDataComponentName="ts_servisTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lozyaConnectionString1Local (Settings)" DbObjectName="lozya.ts_servis" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `ts_servis` (`musteriadsoyad`, `musteriid`, `urun`, `marka`, `model`, `ariza`, `aks1`, `aks2`, `aks3`, `aks4`, `aciklama`, `tarih`, `saat`, `g_tarih`, `g_saat`, `k_tarih`, `k_saat`, `kullanici`, `kullaniciid`, `g_kullanici`, `g_kullaniciid`, `k_kullanici`, `k_kullaniciid`, `durum`, `sil`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="musteriadsoyad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="musteriid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="urun" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="marka" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="model" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ariza" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="aks1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="aks2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="aks3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="aks4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="aciklama" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p12" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="tarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p13" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="saat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p14" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="g_tarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p15" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="g_saat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p16" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="k_tarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p17" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="k_saat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p18" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kullanici" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p19" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kullaniciid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p20" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="g_kullanici" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p21" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="g_kullaniciid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p22" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="k_kullanici" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p23" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="k_kullaniciid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="UInt64" Direction="Input" ParameterName="@p24" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="durum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="UInt64" Direction="Input" ParameterName="@p25" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="sil" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `musteriadsoyad`, `musteriid`, `urun`, `marka`, `model`, `ariza`, `aks1`, `aks2`, `aks3`, `aks4`, `aciklama`, `tarih`, `saat`, `g_tarih`, `g_saat`, `k_tarih`, `k_saat`, `kullanici`, `kullaniciid`, `g_kullanici`, `g_kullaniciid`, `k_kullanici`, `k_kullaniciid`, `durum`, `sil`, `id` FROM `ts_servis`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="musteriadsoyad" DataSetColumn="musteriadsoyad" />
+              <Mapping SourceColumn="musteriid" DataSetColumn="musteriid" />
+              <Mapping SourceColumn="urun" DataSetColumn="urun" />
+              <Mapping SourceColumn="marka" DataSetColumn="marka" />
+              <Mapping SourceColumn="model" DataSetColumn="model" />
+              <Mapping SourceColumn="ariza" DataSetColumn="ariza" />
+              <Mapping SourceColumn="aks1" DataSetColumn="aks1" />
+              <Mapping SourceColumn="aks2" DataSetColumn="aks2" />
+              <Mapping SourceColumn="aks3" DataSetColumn="aks3" />
+              <Mapping SourceColumn="aks4" DataSetColumn="aks4" />
+              <Mapping SourceColumn="aciklama" DataSetColumn="aciklama" />
+              <Mapping SourceColumn="tarih" DataSetColumn="tarih" />
+              <Mapping SourceColumn="saat" DataSetColumn="saat" />
+              <Mapping SourceColumn="g_tarih" DataSetColumn="g_tarih" />
+              <Mapping SourceColumn="g_saat" DataSetColumn="g_saat" />
+              <Mapping SourceColumn="k_tarih" DataSetColumn="k_tarih" />
+              <Mapping SourceColumn="k_saat" DataSetColumn="k_saat" />
+              <Mapping SourceColumn="kullanici" DataSetColumn="kullanici" />
+              <Mapping SourceColumn="kullaniciid" DataSetColumn="kullaniciid" />
+              <Mapping SourceColumn="g_kullanici" DataSetColumn="g_kullanici" />
+              <Mapping SourceColumn="g_kullaniciid" DataSetColumn="g_kullaniciid" />
+              <Mapping SourceColumn="k_kullanici" DataSetColumn="k_kullanici" />
+              <Mapping SourceColumn="k_kullaniciid" DataSetColumn="k_kullaniciid" />
+              <Mapping SourceColumn="durum" DataSetColumn="durum" />
+              <Mapping SourceColumn="sil" DataSetColumn="sil" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ts_servisformTableAdapter" GeneratorDataComponentClassName="ts_servisformTableAdapter" Name="ts_servisform" UserDataComponentName="ts_servisformTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lozyaConnectionString1Local (Settings)" DbObjectName="lozya.ts_servisform" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `ts_servisform` (`yol`, `servisid`) VALUES (@p1, @p2)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="yol" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="servisid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `yol`, `servisid`, `id` FROM `ts_servisform`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="yol" DataSetColumn="yol" />
+              <Mapping SourceColumn="servisid" DataSetColumn="servisid" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ts_urunTableAdapter" GeneratorDataComponentClassName="ts_urunTableAdapter" Name="ts_urun" UserDataComponentName="ts_urunTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lozyaConnectionString1Local (Settings)" DbObjectName="lozya.ts_urun" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `ts_urun` (`ad`) VALUES (@p1)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ad`, `id` FROM `ts_urun`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ad" DataSetColumn="ad" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="lozyaDataSet1Local" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="lozyaDataSet1Local" msprop:Generator_UserDSName="lozyaDataSet1Local">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ts_servis_güncelleme" msprop:Generator_TableClassName="ts_servis_güncellemeDataTable" msprop:Generator_TableVarName="tablets_servis_güncelleme" msprop:Generator_RowChangedName="ts_servis_güncellemeRowChanged" msprop:Generator_TablePropName="ts_servis_güncelleme" msprop:Generator_RowDeletingName="ts_servis_güncellemeRowDeleting" msprop:Generator_RowChangingName="ts_servis_güncellemeRowChanging" msprop:Generator_RowEvHandlerName="ts_servis_güncellemeRowChangeEventHandler" msprop:Generator_RowDeletedName="ts_servis_güncellemeRowDeleted" msprop:Generator_RowClassName="ts_servis_güncellemeRow" msprop:Generator_UserTableName="ts_servis_güncelleme" msprop:Generator_RowEvArgName="ts_servis_güncellemeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="servisid" msprop:Generator_ColumnVarNameInTable="columnservisid" msprop:Generator_ColumnPropNameInRow="servisid" msprop:Generator_ColumnPropNameInTable="servisidColumn" msprop:Generator_UserColumnName="servisid" type="xs:int" minOccurs="0" />
+              <xs:element name="islem" msprop:Generator_ColumnVarNameInTable="columnislem" msprop:Generator_ColumnPropNameInRow="islem" msprop:Generator_ColumnPropNameInTable="islemColumn" msprop:Generator_UserColumnName="islem" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tarih" msprop:Generator_ColumnVarNameInTable="columntarih" msprop:Generator_ColumnPropNameInRow="tarih" msprop:Generator_ColumnPropNameInTable="tarihColumn" msprop:Generator_UserColumnName="tarih" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="saat" msprop:Generator_ColumnVarNameInTable="columnsaat" msprop:Generator_ColumnPropNameInRow="saat" msprop:Generator_ColumnPropNameInTable="saatColumn" msprop:Generator_UserColumnName="saat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kullanici" msprop:Generator_ColumnVarNameInTable="columnkullanici" msprop:Generator_ColumnPropNameInRow="kullanici" msprop:Generator_ColumnPropNameInTable="kullaniciColumn" msprop:Generator_UserColumnName="kullanici" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sil" msprop:Generator_ColumnVarNameInTable="columnsil" msprop:Generator_ColumnPropNameInRow="sil" msprop:Generator_ColumnPropNameInTable="silColumn" msprop:Generator_UserColumnName="sil" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ts_servis_güncelleme1" msprop:Generator_TableClassName="ts_servis_güncelleme1DataTable" msprop:Generator_TableVarName="tablets_servis_güncelleme1" msprop:Generator_TablePropName="ts_servis_güncelleme1" msprop:Generator_RowDeletingName="ts_servis_güncelleme1RowDeleting" msprop:Generator_RowChangingName="ts_servis_güncelleme1RowChanging" msprop:Generator_RowEvHandlerName="ts_servis_güncelleme1RowChangeEventHandler" msprop:Generator_RowDeletedName="ts_servis_güncelleme1RowDeleted" msprop:Generator_UserTableName="ts_servis_güncelleme1" msprop:Generator_RowChangedName="ts_servis_güncelleme1RowChanged" msprop:Generator_RowEvArgName="ts_servis_güncelleme1RowChangeEvent" msprop:Generator_RowClassName="ts_servis_güncelleme1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="servisid" msprop:Generator_ColumnVarNameInTable="columnservisid" msprop:Generator_ColumnPropNameInRow="servisid" msprop:Generator_ColumnPropNameInTable="servisidColumn" msprop:Generator_UserColumnName="servisid" type="xs:int" minOccurs="0" />
+              <xs:element name="islem" msprop:Generator_ColumnVarNameInTable="columnislem" msprop:Generator_ColumnPropNameInRow="islem" msprop:Generator_ColumnPropNameInTable="islemColumn" msprop:Generator_UserColumnName="islem" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tarih" msprop:Generator_ColumnVarNameInTable="columntarih" msprop:Generator_ColumnPropNameInRow="tarih" msprop:Generator_ColumnPropNameInTable="tarihColumn" msprop:Generator_UserColumnName="tarih" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="saat" msprop:Generator_ColumnVarNameInTable="columnsaat" msprop:Generator_ColumnPropNameInRow="saat" msprop:Generator_ColumnPropNameInTable="saatColumn" msprop:Generator_UserColumnName="saat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kullanici" msprop:Generator_ColumnVarNameInTable="columnkullanici" msprop:Generator_ColumnPropNameInRow="kullanici" msprop:Generator_ColumnPropNameInTable="kullaniciColumn" msprop:Generator_UserColumnName="kullanici" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sil" msprop:Generator_ColumnVarNameInTable="columnsil" msprop:Generator_ColumnPropNameInRow="sil" msprop:Generator_ColumnPropNameInTable="silColumn" msprop:Generator_UserColumnName="sil" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ayarlar" msprop:Generator_TableClassName="ayarlarDataTable" msprop:Generator_TableVarName="tableayarlar" msprop:Generator_RowChangedName="ayarlarRowChanged" msprop:Generator_TablePropName="ayarlar" msprop:Generator_RowDeletingName="ayarlarRowDeleting" msprop:Generator_RowChangingName="ayarlarRowChanging" msprop:Generator_RowEvHandlerName="ayarlarRowChangeEventHandler" msprop:Generator_RowDeletedName="ayarlarRowDeleted" msprop:Generator_RowClassName="ayarlarRow" msprop:Generator_UserTableName="ayarlar" msprop:Generator_RowEvArgName="ayarlarRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="raporstili" msprop:Generator_ColumnVarNameInTable="columnraporstili" msprop:Generator_ColumnPropNameInRow="raporstili" msprop:Generator_ColumnPropNameInTable="raporstiliColumn" msprop:Generator_UserColumnName="raporstili" type="xs:int" minOccurs="0" />
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:unsignedLong" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="firma" msprop:Generator_TableClassName="firmaDataTable" msprop:Generator_TableVarName="tablefirma" msprop:Generator_TablePropName="firma" msprop:Generator_RowDeletingName="firmaRowDeleting" msprop:Generator_RowChangingName="firmaRowChanging" msprop:Generator_RowEvHandlerName="firmaRowChangeEventHandler" msprop:Generator_RowDeletedName="firmaRowDeleted" msprop:Generator_UserTableName="firma" msprop:Generator_RowChangedName="firmaRowChanged" msprop:Generator_RowEvArgName="firmaRowChangeEvent" msprop:Generator_RowClassName="firmaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="firmadad" msprop:Generator_ColumnVarNameInTable="columnfirmadad" msprop:Generator_ColumnPropNameInRow="firmadad" msprop:Generator_ColumnPropNameInTable="firmadadColumn" msprop:Generator_UserColumnName="firmadad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="musteriler" msprop:Generator_TableClassName="musterilerDataTable" msprop:Generator_TableVarName="tablemusteriler" msprop:Generator_TablePropName="musteriler" msprop:Generator_RowDeletingName="musterilerRowDeleting" msprop:Generator_RowChangingName="musterilerRowChanging" msprop:Generator_RowEvHandlerName="musterilerRowChangeEventHandler" msprop:Generator_RowDeletedName="musterilerRowDeleted" msprop:Generator_UserTableName="musteriler" msprop:Generator_RowChangedName="musterilerRowChanged" msprop:Generator_RowEvArgName="musterilerRowChangeEvent" msprop:Generator_RowClassName="musterilerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="musteriadsoyad" msprop:Generator_ColumnVarNameInTable="columnmusteriadsoyad" msprop:Generator_ColumnPropNameInRow="musteriadsoyad" msprop:Generator_ColumnPropNameInTable="musteriadsoyadColumn" msprop:Generator_UserColumnName="musteriadsoyad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="eposta" msprop:Generator_ColumnVarNameInTable="columneposta" msprop:Generator_ColumnPropNameInRow="eposta" msprop:Generator_ColumnPropNameInTable="epostaColumn" msprop:Generator_UserColumnName="eposta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="iletisim" msprop:Generator_ColumnVarNameInTable="columniletisim" msprop:Generator_ColumnPropNameInRow="iletisim" msprop:Generator_ColumnPropNameInTable="iletisimColumn" msprop:Generator_UserColumnName="iletisim" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="adres" msprop:Generator_ColumnVarNameInTable="columnadres" msprop:Generator_ColumnPropNameInRow="adres" msprop:Generator_ColumnPropNameInTable="adresColumn" msprop:Generator_UserColumnName="adres" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ts_ariza" msprop:Generator_TableClassName="ts_arizaDataTable" msprop:Generator_TableVarName="tablets_ariza" msprop:Generator_TablePropName="ts_ariza" msprop:Generator_RowDeletingName="ts_arizaRowDeleting" msprop:Generator_RowChangingName="ts_arizaRowChanging" msprop:Generator_RowEvHandlerName="ts_arizaRowChangeEventHandler" msprop:Generator_RowDeletedName="ts_arizaRowDeleted" msprop:Generator_UserTableName="ts_ariza" msprop:Generator_RowChangedName="ts_arizaRowChanged" msprop:Generator_RowEvArgName="ts_arizaRowChangeEvent" msprop:Generator_RowClassName="ts_arizaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ad" msprop:Generator_ColumnVarNameInTable="columnad" msprop:Generator_ColumnPropNameInRow="ad" msprop:Generator_ColumnPropNameInTable="adColumn" msprop:Generator_UserColumnName="ad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="urun" msprop:Generator_ColumnVarNameInTable="columnurun" msprop:Generator_ColumnPropNameInRow="urun" msprop:Generator_ColumnPropNameInTable="urunColumn" msprop:Generator_UserColumnName="urun" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ts_marka" msprop:Generator_TableClassName="ts_markaDataTable" msprop:Generator_TableVarName="tablets_marka" msprop:Generator_TablePropName="ts_marka" msprop:Generator_RowDeletingName="ts_markaRowDeleting" msprop:Generator_RowChangingName="ts_markaRowChanging" msprop:Generator_RowEvHandlerName="ts_markaRowChangeEventHandler" msprop:Generator_RowDeletedName="ts_markaRowDeleted" msprop:Generator_UserTableName="ts_marka" msprop:Generator_RowChangedName="ts_markaRowChanged" msprop:Generator_RowEvArgName="ts_markaRowChangeEvent" msprop:Generator_RowClassName="ts_markaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ad" msprop:Generator_ColumnVarNameInTable="columnad" msprop:Generator_ColumnPropNameInRow="ad" msprop:Generator_ColumnPropNameInTable="adColumn" msprop:Generator_UserColumnName="ad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="urun" msprop:Generator_ColumnVarNameInTable="columnurun" msprop:Generator_ColumnPropNameInRow="urun" msprop:Generator_ColumnPropNameInTable="urunColumn" msprop:Generator_UserColumnName="urun" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ts_model" msprop:Generator_TableClassName="ts_modelDataTable" msprop:Generator_TableVarName="tablets_model" msprop:Generator_TablePropName="ts_model" msprop:Generator_RowDeletingName="ts_modelRowDeleting" msprop:Generator_RowChangingName="ts_modelRowChanging" msprop:Generator_RowEvHandlerName="ts_modelRowChangeEventHandler" msprop:Generator_RowDeletedName="ts_modelRowDeleted" msprop:Generator_UserTableName="ts_model" msprop:Generator_RowChangedName="ts_modelRowChanged" msprop:Generator_RowEvArgName="ts_modelRowChangeEvent" msprop:Generator_RowClassName="ts_modelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ad" msprop:Generator_ColumnVarNameInTable="columnad" msprop:Generator_ColumnPropNameInRow="ad" msprop:Generator_ColumnPropNameInTable="adColumn" msprop:Generator_UserColumnName="ad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="marka" msprop:Generator_ColumnVarNameInTable="columnmarka" msprop:Generator_ColumnPropNameInRow="marka" msprop:Generator_ColumnPropNameInTable="markaColumn" msprop:Generator_UserColumnName="marka" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ts_servis" msprop:Generator_TableClassName="ts_servisDataTable" msprop:Generator_TableVarName="tablets_servis" msprop:Generator_TablePropName="ts_servis" msprop:Generator_RowDeletingName="ts_servisRowDeleting" msprop:Generator_RowChangingName="ts_servisRowChanging" msprop:Generator_RowEvHandlerName="ts_servisRowChangeEventHandler" msprop:Generator_RowDeletedName="ts_servisRowDeleted" msprop:Generator_UserTableName="ts_servis" msprop:Generator_RowChangedName="ts_servisRowChanged" msprop:Generator_RowEvArgName="ts_servisRowChangeEvent" msprop:Generator_RowClassName="ts_servisRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="musteriadsoyad" msprop:Generator_ColumnVarNameInTable="columnmusteriadsoyad" msprop:Generator_ColumnPropNameInRow="musteriadsoyad" msprop:Generator_ColumnPropNameInTable="musteriadsoyadColumn" msprop:Generator_UserColumnName="musteriadsoyad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="musteriid" msprop:Generator_ColumnVarNameInTable="columnmusteriid" msprop:Generator_ColumnPropNameInRow="musteriid" msprop:Generator_ColumnPropNameInTable="musteriidColumn" msprop:Generator_UserColumnName="musteriid" type="xs:int" minOccurs="0" />
+              <xs:element name="urun" msprop:Generator_ColumnVarNameInTable="columnurun" msprop:Generator_ColumnPropNameInRow="urun" msprop:Generator_ColumnPropNameInTable="urunColumn" msprop:Generator_UserColumnName="urun" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="marka" msprop:Generator_ColumnVarNameInTable="columnmarka" msprop:Generator_ColumnPropNameInRow="marka" msprop:Generator_ColumnPropNameInTable="markaColumn" msprop:Generator_UserColumnName="marka" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="model" msprop:Generator_ColumnVarNameInTable="columnmodel" msprop:Generator_ColumnPropNameInRow="model" msprop:Generator_ColumnPropNameInTable="modelColumn" msprop:Generator_UserColumnName="model" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ariza" msprop:Generator_ColumnVarNameInTable="columnariza" msprop:Generator_ColumnPropNameInRow="ariza" msprop:Generator_ColumnPropNameInTable="arizaColumn" msprop:Generator_UserColumnName="ariza" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aks1" msprop:Generator_ColumnVarNameInTable="columnaks1" msprop:Generator_ColumnPropNameInRow="aks1" msprop:Generator_ColumnPropNameInTable="aks1Column" msprop:Generator_UserColumnName="aks1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aks2" msprop:Generator_ColumnVarNameInTable="columnaks2" msprop:Generator_ColumnPropNameInRow="aks2" msprop:Generator_ColumnPropNameInTable="aks2Column" msprop:Generator_UserColumnName="aks2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aks3" msprop:Generator_ColumnVarNameInTable="columnaks3" msprop:Generator_ColumnPropNameInRow="aks3" msprop:Generator_ColumnPropNameInTable="aks3Column" msprop:Generator_UserColumnName="aks3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aks4" msprop:Generator_ColumnVarNameInTable="columnaks4" msprop:Generator_ColumnPropNameInRow="aks4" msprop:Generator_ColumnPropNameInTable="aks4Column" msprop:Generator_UserColumnName="aks4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aciklama" msprop:Generator_ColumnVarNameInTable="columnaciklama" msprop:Generator_ColumnPropNameInRow="aciklama" msprop:Generator_ColumnPropNameInTable="aciklamaColumn" msprop:Generator_UserColumnName="aciklama" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tarih" msprop:Generator_ColumnVarNameInTable="columntarih" msprop:Generator_ColumnPropNameInRow="tarih" msprop:Generator_ColumnPropNameInTable="tarihColumn" msprop:Generator_UserColumnName="tarih" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="saat" msprop:Generator_ColumnVarNameInTable="columnsaat" msprop:Generator_ColumnPropNameInRow="saat" msprop:Generator_ColumnPropNameInTable="saatColumn" msprop:Generator_UserColumnName="saat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="g_tarih" msprop:Generator_ColumnVarNameInTable="columng_tarih" msprop:Generator_ColumnPropNameInRow="g_tarih" msprop:Generator_ColumnPropNameInTable="g_tarihColumn" msprop:Generator_UserColumnName="g_tarih" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="g_saat" msprop:Generator_ColumnVarNameInTable="columng_saat" msprop:Generator_ColumnPropNameInRow="g_saat" msprop:Generator_ColumnPropNameInTable="g_saatColumn" msprop:Generator_UserColumnName="g_saat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="k_tarih" msprop:Generator_ColumnVarNameInTable="columnk_tarih" msprop:Generator_ColumnPropNameInRow="k_tarih" msprop:Generator_ColumnPropNameInTable="k_tarihColumn" msprop:Generator_UserColumnName="k_tarih" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="k_saat" msprop:Generator_ColumnVarNameInTable="columnk_saat" msprop:Generator_ColumnPropNameInRow="k_saat" msprop:Generator_ColumnPropNameInTable="k_saatColumn" msprop:Generator_UserColumnName="k_saat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kullanici" msprop:Generator_ColumnVarNameInTable="columnkullanici" msprop:Generator_ColumnPropNameInRow="kullanici" msprop:Generator_ColumnPropNameInTable="kullaniciColumn" msprop:Generator_UserColumnName="kullanici" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kullaniciid" msprop:Generator_ColumnVarNameInTable="columnkullaniciid" msprop:Generator_ColumnPropNameInRow="kullaniciid" msprop:Generator_ColumnPropNameInTable="kullaniciidColumn" msprop:Generator_UserColumnName="kullaniciid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="g_kullanici" msprop:Generator_ColumnVarNameInTable="columng_kullanici" msprop:Generator_ColumnPropNameInRow="g_kullanici" msprop:Generator_ColumnPropNameInTable="g_kullaniciColumn" msprop:Generator_UserColumnName="g_kullanici" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="g_kullaniciid" msprop:Generator_ColumnVarNameInTable="columng_kullaniciid" msprop:Generator_ColumnPropNameInRow="g_kullaniciid" msprop:Generator_ColumnPropNameInTable="g_kullaniciidColumn" msprop:Generator_UserColumnName="g_kullaniciid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="k_kullanici" msprop:Generator_ColumnVarNameInTable="columnk_kullanici" msprop:Generator_ColumnPropNameInRow="k_kullanici" msprop:Generator_ColumnPropNameInTable="k_kullaniciColumn" msprop:Generator_UserColumnName="k_kullanici" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="k_kullaniciid" msprop:Generator_ColumnVarNameInTable="columnk_kullaniciid" msprop:Generator_ColumnPropNameInRow="k_kullaniciid" msprop:Generator_ColumnPropNameInTable="k_kullaniciidColumn" msprop:Generator_UserColumnName="k_kullaniciid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="durum" msprop:Generator_ColumnVarNameInTable="columndurum" msprop:Generator_ColumnPropNameInRow="durum" msprop:Generator_ColumnPropNameInTable="durumColumn" msprop:Generator_UserColumnName="durum" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="sil" msprop:Generator_ColumnVarNameInTable="columnsil" msprop:Generator_ColumnPropNameInRow="sil" msprop:Generator_ColumnPropNameInTable="silColumn" msprop:Generator_UserColumnName="sil" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ts_servisform" msprop:Generator_TableClassName="ts_servisformDataTable" msprop:Generator_TableVarName="tablets_servisform" msprop:Generator_TablePropName="ts_servisform" msprop:Generator_RowDeletingName="ts_servisformRowDeleting" msprop:Generator_RowChangingName="ts_servisformRowChanging" msprop:Generator_RowEvHandlerName="ts_servisformRowChangeEventHandler" msprop:Generator_RowDeletedName="ts_servisformRowDeleted" msprop:Generator_UserTableName="ts_servisform" msprop:Generator_RowChangedName="ts_servisformRowChanged" msprop:Generator_RowEvArgName="ts_servisformRowChangeEvent" msprop:Generator_RowClassName="ts_servisformRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="yol" msprop:Generator_ColumnVarNameInTable="columnyol" msprop:Generator_ColumnPropNameInRow="yol" msprop:Generator_ColumnPropNameInTable="yolColumn" msprop:Generator_UserColumnName="yol" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="servisid" msprop:Generator_ColumnVarNameInTable="columnservisid" msprop:Generator_ColumnPropNameInRow="servisid" msprop:Generator_ColumnPropNameInTable="servisidColumn" msprop:Generator_UserColumnName="servisid" type="xs:int" minOccurs="0" />
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ts_urun" msprop:Generator_TableClassName="ts_urunDataTable" msprop:Generator_TableVarName="tablets_urun" msprop:Generator_TablePropName="ts_urun" msprop:Generator_RowDeletingName="ts_urunRowDeleting" msprop:Generator_RowChangingName="ts_urunRowChanging" msprop:Generator_RowEvHandlerName="ts_urunRowChangeEventHandler" msprop:Generator_RowDeletedName="ts_urunRowDeleted" msprop:Generator_UserTableName="ts_urun" msprop:Generator_RowChangedName="ts_urunRowChanged" msprop:Generator_RowEvArgName="ts_urunRowChangeEvent" msprop:Generator_RowClassName="ts_urunRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ad" msprop:Generator_ColumnVarNameInTable="columnad" msprop:Generator_ColumnPropNameInRow="ad" msprop:Generator_ColumnPropNameInTable="adColumn" msprop:Generator_UserColumnName="ad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F509182-EBC8-47EF-8A70-CE73697502C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LOYAZ</RootNamespace>
+    <AssemblyName>LOYAZ</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'IQT|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\IQT\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942" />
+    <Reference Include="DevExpress.BonusSkins.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604" />
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d" />
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dayhan_lozyaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dayhan_lozyaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Anasayfa\frm_anasayfa_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Anasayfa\frm_anasayfa_form.Designer.cs">
+      <DependentUpon>frm_anasayfa_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Anasayfa\frm_boş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Anasayfa\frm_boş.Designer.cs">
+      <DependentUpon>frm_boş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Ayarlar\Devexpress.reg.de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Ayarlar\Devexpress.reg.de.Designer.cs">
+      <DependentUpon>Devexpress.reg.de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Ayarlar\KullanıcıHesapları\pnl_kul_yeni-düzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Ayarlar\KullanıcıHesapları\pnl_kul_yeni-düzenle.Designer.cs">
+      <DependentUpon>pnl_kul_yeni-düzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Satış\frm_st_adetdeğiştir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Satış\frm_st_adetdeğiştir.Designer.cs">
+      <DependentUpon>frm_st_adetdeğiştir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Satış\frm_st_fiyatdeğiştir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Satış\frm_st_fiyatdeğiştir.Designer.cs">
+      <DependentUpon>frm_st_fiyatdeğiştir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Satış\frm_st_ürünbul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Satış\frm_st_ürünbul.Designer.cs">
+      <DependentUpon>frm_st_ürünbul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Satış\frm_st_ürüneiskonto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Satış\frm_st_ürüneiskonto.Designer.cs">
+      <DependentUpon>frm_st_ürüneiskonto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Stok\frm_stk_özellikEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Stok\frm_stk_özellikEkle.Designer.cs">
+      <DependentUpon>frm_stk_özellikEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_randevuEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_randevuEkrani.Designer.cs">
+      <DependentUpon>frm_ts_randevuEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_sformyükle_toplu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_sformyükle_toplu.Designer.cs">
+      <DependentUpon>frm_ts_sformyükle_toplu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\WaitForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\WaitForm3.Designer.cs">
+      <DependentUpon>WaitForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frm_bağlantı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frm_bağlantı.Designer.cs">
+      <DependentUpon>frm_bağlantı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frm_giriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frm_giriş.Designer.cs">
+      <DependentUpon>frm_giriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_raporol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_raporol.Designer.cs">
+      <DependentUpon>frm_ts_raporol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_servisgüncelle_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_servisgüncelle_frm.Designer.cs">
+      <DependentUpon>frm_ts_servisgüncelle_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Müşteriler\frm_ms_yenimüşteri_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Müşteriler\frm_ms_yenimüşteri_frm.Designer.cs">
+      <DependentUpon>frm_ms_yenimüşteri_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_sformyükle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_sformyükle.Designer.cs">
+      <DependentUpon>frm_ts_sformyükle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_yeniservis_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_yeniservis_frm.Designer.cs">
+      <DependentUpon>frm_ts_yeniservis_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\WaitForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\WaitForm2.Designer.cs">
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frm_tanım_kredikartları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frm_tanım_kredikartları.Designer.cs">
+      <DependentUpon>frm_tanım_kredikartları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lozyaDataSet1Local.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lozyaDataSet1Local.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Anasayfa\frm_anasayfa_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Anasayfa\frm_anasayfa_panel.Designer.cs">
+      <DependentUpon>frm_anasayfa_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_ariza_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_ariza_frm.Designer.cs">
+      <DependentUpon>frm_ts_ariza_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Ayarlar\frm_ayarlar_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Ayarlar\frm_ayarlar_panel.Designer.cs">
+      <DependentUpon>frm_ayarlar_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_ürün_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_ürün_frm.Designer.cs">
+      <DependentUpon>frm_ts_ürün_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Müşteriler\frm_ms_anasayfa_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Müşteriler\frm_ms_anasayfa_panel.Designer.cs">
+      <DependentUpon>frm_ms_anasayfa_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Satış\frm_st_anasayfa_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Satış\frm_st_anasayfa_panel.Designer.cs">
+      <DependentUpon>frm_st_anasayfa_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Stok\frm_stk_anasayfa_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Stok\frm_stk_anasayfa_panel.Designer.cs">
+      <DependentUpon>frm_stk_anasayfa_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_anasayfa_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Teknikservis\frm_ts_anasayfa_panel.Designer.cs">
+      <DependentUpon>frm_ts_anasayfa_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raporlar\ts\rpr_a4a5.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Raporlar\ts\rpr_a4a5.Designer.cs">
+      <DependentUpon>rpr_a4a5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raporlar\ts\rpr_kapananformGör.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Raporlar\ts\rpr_kapananformGör.Designer.cs">
+      <DependentUpon>rpr_kapananformGör.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raporlar\ts\rpr_ts_servisformu_a4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Raporlar\ts\rpr_ts_servisformu_a4.Designer.cs">
+      <DependentUpon>rpr_ts_servisformu_a4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raporlar\ts\rpr_serviskapama_a4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Raporlar\ts\rpr_serviskapama_a4.Designer.cs">
+      <DependentUpon>rpr_serviskapama_a4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raporlar\ts\rpr_ts_tümü.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Raporlar\ts\rpr_ts_tümü.Designer.cs">
+      <DependentUpon>rpr_ts_tümü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlbağlantısı.cs" />
+    <Compile Include="yük_kaydediliyor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yük_kaydediliyor.Designer.cs">
+      <DependentUpon>yük_kaydediliyor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yük_yükleniyor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yük_yükleniyor.Designer.cs">
+      <DependentUpon>yük_yükleniyor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formlar\Anasayfa\frm_anasayfa_form.resx">
+      <DependentUpon>frm_anasayfa_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Anasayfa\frm_boş.resx">
+      <DependentUpon>frm_boş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Ayarlar\Devexpress.reg.de.resx">
+      <DependentUpon>Devexpress.reg.de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Ayarlar\KullanıcıHesapları\pnl_kul_yeni-düzenle.resx">
+      <DependentUpon>pnl_kul_yeni-düzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frm_tanım_kredikartları.resx">
+      <DependentUpon>frm_tanım_kredikartları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Satış\frm_st_adetdeğiştir.resx">
+      <DependentUpon>frm_st_adetdeğiştir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Satış\frm_st_fiyatdeğiştir.resx">
+      <DependentUpon>frm_st_fiyatdeğiştir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Satış\frm_st_ürünbul.resx">
+      <DependentUpon>frm_st_ürünbul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Satış\frm_st_ürüneiskonto.resx">
+      <DependentUpon>frm_st_ürüneiskonto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Stok\frm_stk_özellikEkle.resx">
+      <DependentUpon>frm_stk_özellikEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Teknikservis\frm_ts_randevuEkrani.resx">
+      <DependentUpon>frm_ts_randevuEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Teknikservis\frm_ts_sformyükle_toplu.resx">
+      <DependentUpon>frm_ts_sformyükle_toplu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\WaitForm3.resx">
+      <DependentUpon>WaitForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frm_bağlantı.resx">
+      <DependentUpon>frm_bağlantı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frm_giriş.resx">
+      <DependentUpon>frm_giriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Teknikservis\frm_ts_raporol.resx">
+      <DependentUpon>frm_ts_raporol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Teknikservis\frm_ts_servisgüncelle_frm.resx">
+      <DependentUpon>frm_ts_servisgüncelle_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Müşteriler\frm_ms_yenimüşteri_frm.resx">
+      <DependentUpon>frm_ms_yenimüşteri_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Teknikservis\frm_ts_sformyükle.resx">
+      <DependentUpon>frm_ts_sformyükle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Teknikservis\frm_ts_yeniservis_frm.resx">
+      <DependentUpon>frm_ts_yeniservis_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Anasayfa\frm_anasayfa_panel.resx">
+      <DependentUpon>frm_anasayfa_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Teknikservis\frm_ts_ariza_frm.resx">
+      <DependentUpon>frm_ts_ariza_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Ayarlar\frm_ayarlar_panel.resx">
+      <DependentUpon>frm_ayarlar_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Teknikservis\frm_ts_ürün_frm.resx">
+      <DependentUpon>frm_ts_ürün_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Müşteriler\frm_ms_anasayfa_panel.resx">
+      <DependentUpon>frm_ms_anasayfa_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Satış\frm_st_anasayfa_panel.resx">
+      <DependentUpon>frm_st_anasayfa_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Stok\frm_stk_anasayfa_panel.resx">
+      <DependentUpon>frm_stk_anasayfa_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Teknikservis\frm_ts_anasayfa_panel.resx">
+      <DependentUpon>frm_ts_anasayfa_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\WaitForm2.resx">
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Raporlar\ts\rpr_a4a5.resx">
+      <DependentUpon>rpr_a4a5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar\ts\rpr_kapananformGör.resx">
+      <DependentUpon>rpr_kapananformGör.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar\ts\rpr_ts_servisformu_a4.resx">
+      <DependentUpon>rpr_ts_servisformu_a4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar\ts\rpr_serviskapama_a4.resx">
+      <DependentUpon>rpr_serviskapama_a4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar\ts\rpr_ts_tümü.resx">
+      <DependentUpon>rpr_ts_tümü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yük_kaydediliyor.resx">
+      <DependentUpon>yük_kaydediliyor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yük_yükleniyor.resx">
+      <DependentUpon>yük_yükleniyor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Dayhan_lozyaDataSet1.xsc">
+      <DependentUpon>Dayhan_lozyaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Dayhan_lozyaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dayhan_lozyaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dayhan_lozyaDataSet1.xss">
+      <DependentUpon>Dayhan_lozyaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="lozyaDataSet1Local.xsc">
+      <DependentUpon>lozyaDataSet1Local.xsd</DependentUpon>
+    </None>
+    <None Include="lozyaDataSet1Local.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lozyaDataSet1Local.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lozyaDataSet1Local.xss">
+      <DependentUpon>lozyaDataSet1Local.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scan4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bekleme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12123123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1 copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ffa09aec412db3f54deadf1b3781de2a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WIA">
+      <Guid>{94A0E92D-43C0-494E-AC29-FD45948A5221}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
