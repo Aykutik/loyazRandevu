@@ -22,7 +22,7 @@ namespace LOYAZ
         
         public frm_giriş()
         {
-            
+            //selam
             InitializeComponent();
         }
 
@@ -188,7 +188,7 @@ namespace LOYAZ
 
                 }
 
-                try// verileri sonraki sayfaya aktar.
+                try// verileri sonraki sayfaya aktar..
                 {
                     frm_anasayfa_form frm = new frm_anasayfa_form();
                     frm.lbl_kul_id.Text = oku["id"].ToString();

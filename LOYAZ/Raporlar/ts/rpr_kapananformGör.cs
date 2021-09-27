@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using DevExpress.XtraReports.UI;
 using System.IO;
-using Renci.SshNet.Messages;
+//using Renci.SshNet.Messages;
 using System.Windows.Forms;
 
 namespace LOYAZ.Raporlar.ts
