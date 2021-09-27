@@ -16,6 +16,9 @@ namespace LOYAZ
     {
         public MySqlConnection bağlantı()
         {
+
+
+
             //string bağlantıadresi = "Server = loyaz.net; Database = u477970783_tanlas; Convert Zero Datetime=true; uid = u477970783_aykutik;persistsecurityinfo=True; Password = aykuT18092007;SSL Mode=none";
             string bağlantıadresi = "";
 
@@ -35,14 +38,15 @@ namespace LOYAZ
             fs.Close();
 
             MySqlConnection bağlantı = new MySqlConnection(bağlantıadresi);
-
-            if (bağlantı.State ==ConnectionState.Open)
+            if (bağlantı.State == ConnectionState.Open)
             {
                 bağlantı.Close();
             }
 
+
             bağlantı.Open();
-            return bağlantı;            
+            return bağlantı;
+            bağlantı.Close();
         }
 
         public string macAlDsyadan()

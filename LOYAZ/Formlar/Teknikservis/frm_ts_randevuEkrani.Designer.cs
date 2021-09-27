@@ -41,6 +41,7 @@ namespace LOYAZ.Formlar.Teknikservis
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.timerSanye = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlRandevuEkrani)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewRandevuEkrani)).BeginInit();
@@ -139,6 +140,12 @@ namespace LOYAZ.Formlar.Teknikservis
             this.simpleButton1.Text = "simpleButton1";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // timerSanye
+            // 
+            this.timerSanye.Enabled = true;
+            this.timerSanye.Interval = 1000;
+            this.timerSanye.Tick += new System.EventHandler(this.timerSanye_Tick);
+            // 
             // frm_ts_randevuEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,5 +178,6 @@ namespace LOYAZ.Formlar.Teknikservis
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private System.Windows.Forms.Timer timerSanye;
     }
 }
