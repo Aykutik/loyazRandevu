@@ -53,7 +53,7 @@ namespace LOYAZ.Formlar.Teknikservis
             this.gridControlRandevuEkrani.Location = new System.Drawing.Point(0, 0);
             this.gridControlRandevuEkrani.MainView = this.gridViewRandevuEkrani;
             this.gridControlRandevuEkrani.Name = "gridControlRandevuEkrani";
-            this.gridControlRandevuEkrani.Size = new System.Drawing.Size(1043, 659);
+            this.gridControlRandevuEkrani.Size = new System.Drawing.Size(1177, 659);
             this.gridControlRandevuEkrani.TabIndex = 0;
             this.gridControlRandevuEkrani.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewRandevuEkrani});
@@ -143,7 +143,7 @@ namespace LOYAZ.Formlar.Teknikservis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 659);
+            this.ClientSize = new System.Drawing.Size(1177, 659);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.gridControlRandevuEkrani);
             this.Name = "frm_ts_randevuEkrani";

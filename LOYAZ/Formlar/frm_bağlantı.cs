@@ -28,7 +28,7 @@ namespace LOYAZ.Formlar
                 File.Delete(dosya_yolu);
                 FileStream fs = new FileStream(dosya_yolu, FileMode.OpenOrCreate, FileAccess.Write);
                 StreamWriter sw = new StreamWriter(fs);
-                sw.WriteLine("server=" + txt_server.Text.Trim() + ";user id=" + txt_kullanıcıadı.Text.Trim() + "; password=" + txt_parola.Text.Trim() + ";persistsecurityinfo=True;database=" + txt_database.Text.Trim() + "; Charset = utf8");
+                sw.WriteLine("server=" + txt_server.Text.Trim() + ";user id=" + txt_kullanıcıadı.Text.Trim() + "; password=" + txt_parola.Text.Trim() + ";persistsecurityinfo=True; Convert Zero Datetime=true; database=" + txt_database.Text.Trim() + "; Charset = utf8;;SSL Mode=none");
                 sw.Flush();
                 sw.Close();
                 fs.Close();
@@ -40,7 +40,7 @@ namespace LOYAZ.Formlar
                 File.Delete(dosya_yolu);
                 FileStream fs = new FileStream(dosya_yolu, FileMode.OpenOrCreate, FileAccess.Write);
                 StreamWriter sw = new StreamWriter(fs);
-                sw.WriteLine("server=" + txt_server.Text.Trim() + ";user id=" + txt_kullanıcıadı.Text.Trim() + ";database=lozya; Charset = utf8");
+                sw.WriteLine("server = " + txt_server.Text.Trim() + "; user id = " + txt_kullanıcıadı.Text.Trim() + "; password = " + txt_parola.Text.Trim() + "; Convert Zero Datetime=true; persistsecurityinfo = True; database = " + txt_database.Text.Trim() + "; SSL Mode = none");
                 sw.Flush();
                 sw.Close();
                 fs.Close();
@@ -54,7 +54,8 @@ namespace LOYAZ.Formlar
             dosyayaz();
 
             kapatabilir.Text = "evet";
-            
+            //server=loyaz.net;user id=u477970783_aykutik; password=aykuT18092007;persistsecurityinfo=True;database=u477970783_tanlas; Charset = utf8
+            //server = loyaz.net; user id = u477970783_aykutik; password = aykuT18092007; persistsecurityinfo = True; database = u477970783_tanlas; Charset = utf8
             this.Close();
 
         }
@@ -63,19 +64,19 @@ namespace LOYAZ.Formlar
         {
             try
             {
-                MySqlConnection bağlantı = new MySqlConnection("server=" + txt_server.Text.Trim() + ";user id=" + txt_kullanıcıadı.Text.Trim() + "; password=" + txt_parola.Text.Trim() + ";database=" + txt_database.Text.Trim() + "; Charset = utf8");
+                MySqlConnection bağlantı = new MySqlConnection("server=" + txt_server.Text.Trim() + ";user id=" + txt_kullanıcıadı.Text.Trim() + "; password=" + txt_parola.Text.Trim() + "; persistsecurityinfo=True; database=" + txt_database.Text.Trim() + ";SSL Mode=none; Convert Zero Datetime=true;");
                 bağlantı.Open();
 
                 string bağlantıtest = "";
 
-                MySqlCommand komut = new MySqlCommand("select *from tarih where id=@id", bağlantı);
+                MySqlCommand komut = new MySqlCommand("select *from ayarlar where id=@id", bağlantı);
                 komut.Parameters.Clear();
-                komut.Parameters.AddWithValue("@id", 48);
+                komut.Parameters.AddWithValue("@id", 1);
                 komut.ExecuteNonQuery();
                 MySqlDataReader oku = komut.ExecuteReader();
                 if (oku.Read())
                 {
-                    bağlantıtest = oku["tarih"].ToString();
+                    bağlantıtest = oku["baglantitest"].ToString();
                     MessageBox.Show("" + bağlantıtest + " Kaydetme işlemi yapabilirsiniz.", "BAĞLANTI SAĞLANDI", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }

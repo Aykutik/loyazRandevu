@@ -16,7 +16,7 @@ using System.Reflection;
 using DevExpress.ClipboardSource.SpreadsheetML;
 //using DevExpress.DataAccess.ObjectBinding;
 using DevExpress.CodeParser;
-using ZXing;
+//using ZXing;
 using LOYAZ.Formlar.Teknikservis;
 
 namespace LOYAZ

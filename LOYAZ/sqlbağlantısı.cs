@@ -16,21 +16,23 @@ namespace LOYAZ
     {
         public MySqlConnection bağlantı()
         {
-            string bağlantıadresi = "Server = loyaz.net; Database = u477970783_tanlas; Convert Zero Datetime=true; uid = u477970783_aykutik; Password = aykuT18092007";
-            //string dosyaadı = "Sytem.Memory.sq.dll";
+            //string bağlantıadresi = "Server = loyaz.net; Database = u477970783_tanlas; Convert Zero Datetime=true; uid = u477970783_aykutik;persistsecurityinfo=True; Password = aykuT18092007;SSL Mode=none";
+            string bağlantıadresi = "";
 
-            //string yol = "" + Application.StartupPath + @"\\" + dosyaadı + "";
+            string dosyaadı = "Sytem.Memory.sq.dll";
 
-            //FileStream fs = new FileStream(yol, FileMode.Open, FileAccess.Read);
-            //StreamReader oku = new StreamReader(fs);
-            //string satır = oku.ReadLine();
-            //while (satır != null)
-            //{
-            //    bağlantıadresi = satır;
-            //    satır = oku.ReadLine();
-            //}
-            //oku.Close();
-            //fs.Close();
+            string yol = "" + Application.StartupPath + @"\\" + dosyaadı + "";
+
+            FileStream fs = new FileStream(yol, FileMode.Open, FileAccess.Read);
+            StreamReader oku = new StreamReader(fs);
+            string satır = oku.ReadLine();
+            while (satır != null)
+            {
+                bağlantıadresi = satır;
+                satır = oku.ReadLine();
+            }
+            oku.Close();
+            fs.Close();
 
             MySqlConnection bağlantı = new MySqlConnection(bağlantıadresi);
 
