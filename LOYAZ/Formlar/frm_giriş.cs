@@ -22,7 +22,6 @@ namespace LOYAZ
         
         public frm_giriş()
         {
-            //selam
             InitializeComponent();
         }
 
