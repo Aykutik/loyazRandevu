@@ -227,6 +227,8 @@ namespace LOYAZ
             bindingSource1.DataSource = ds;
             bindingSource1.Filter = "arac ='" + comboBoxEdit_aracArac.Text + "'";
             searchLookUpEditAracMarka.Properties.DataSource = bindingSource1;
+            searchLookUpEditAracMarka.Properties.DisplayMember = "marka";
+            searchLookUpEditAracMarka.Properties.ValueMember = "id";
         }
 
         private void comboBoxEdit_aracArac_SelectedIndexChanged(object sender, EventArgs e)

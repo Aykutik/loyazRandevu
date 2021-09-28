@@ -19,50 +19,37 @@ namespace LOYAZ.Formlar.Teknikservis
         {
             InitializeComponent();
         }
-        public string bağlantıadresi = "";
-        
 
+        sqlbağlantısı blg = new sqlbağlantısı();
+        
         public DateTime bugün = DateTime.Now;
 
         private void frm_ts_randevuEkrani_Load(object sender, EventArgs e)
         {
-            mysqlGetir();
-            randevulariGetir();
-        }
-
-        private void mysqlGetir()
-        {          
-
-            string dosyaadı = "Sytem.Memory.sq.dll";
-
-            string yol = "" + Application.StartupPath + @"\\" + dosyaadı + "";
-
-            FileStream fs = new FileStream(yol, FileMode.Open, FileAccess.Read);
-            StreamReader oku = new StreamReader(fs);
-            string satır = oku.ReadLine();
-            while (satır != null)
+            try
             {
-                bağlantıadresi = satır;
-                satır = oku.ReadLine();
+                randevulariTemizle();
+                randevulariGetir();
             }
-            oku.Close();
-            fs.Close();
+            catch (Exception)
+            {
+
+            }
         }
 
         private void randevulariTemizle()
         {
-            MySqlConnection bağlantı = new MySqlConnection(bağlantıadresi);
-            string saat = bugün.ToString().Substring(11, 2);
+            string saatSaat = bugün.ToString().Substring(11, 2);
+            
             string tarihGun = bugün.ToString().Substring(0, 2);
             string tarihAy = bugün.ToString().Substring(3, 2);
             string tarihYil = bugün.ToString().Substring(6, 4);
             int geciciSaat = 0;
             
-            MySqlCommand komut_firmad = new MySqlCommand("SELECT *FROM servis_hareketler WHERE tarih=@tarih and randevu=@randevu", bağlantı);
+            MySqlCommand komut_firmad = new MySqlCommand("SELECT *FROM servis_hareketler WHERE tarih=@tarih and randevu=@randevu", blg.bağlantı());
             komut_firmad.Parameters.Clear();
             komut_firmad.Parameters.AddWithValue("@tarih", ""+tarihYil+"-"+tarihAy+"-"+tarihGun+"");
             komut_firmad.Parameters.AddWithValue("@randevu", "1");
-            bağlantı.Open();
             komut_firmad.ExecuteNonQuery();
             MySqlDataReader oku_firmaad = komut_firmad.ExecuteReader();
             while (oku_firmaad.Read())
@@ -70,45 +57,91 @@ namespace LOYAZ.Formlar.Teknikservis
                 int id = Convert.ToInt32(oku_firmaad["id"]);
                 geciciSaat = Convert.ToInt32(oku_firmaad["saat"].ToString().Substring(0,2));
 
-                if (geciciSaat < Convert.ToInt32(saat))
+                if (geciciSaat < Convert.ToInt32(saatSaat))
                 {
-                    MySqlCommand komut = new MySqlCommand("update servis_hareketler set randevu=@randevu where id=@id", bağlantı);
+                    MySqlCommand komut = new MySqlCommand("update servis_hareketler set randevu=@randevu where id=@id", blg.bağlantı());
                     komut.Parameters.Clear();
                     komut.Parameters.AddWithValue("@id", Convert.ToInt32(id));
                     komut.Parameters.AddWithValue("@randevu", "10");
                     komut.ExecuteNonQuery();
                 }
-                randevulariGetir();
             }
+            randevulariGetir();
             oku_firmaad.Close();
-            bağlantı.Close();
         }
-        
 
         public void randevulariGetir()
         {
-            MySqlConnection bağlantı = new MySqlConnection(bağlantıadresi);
             string tarih = bugün.ToString().Substring(0, 10);
 
-            MySqlDataAdapter adp = new MySqlDataAdapter("select *from servis_hareketler", bağlantı);
+            MySqlDataAdapter adp = new MySqlDataAdapter("select *from servis_hareketler", blg.bağlantı());
             DataTable ds = new DataTable();
-            bağlantı.Open();
             adp.Fill(ds);
             bindingSource1.DataSource = ds;
             bindingSource1.Filter = "tarih ='" + tarih + "' and randevu=1";
             gridControlRandevuEkrani.DataSource = bindingSource1;
-            bağlantı.Close();
-        }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            randevulariTemizle();
         }
 
         private void timerSanye_Tick(object sender, EventArgs e)
         {
-            randevulariTemizle();
-            randevulariGetir();
+            // saat döndürme
+            lbl_saniye.Text = şimdiDakika();
+            lbl_dakika.Text = şimdiSaniye();
+            lbl_saat.Text = şimdiSaat();
+
+            // Gün
+            lblTarih.Text = tarih();
+            //
+            string saatDakika = bugün.ToString().Substring(14, 2);
+            string saatSaniye = bugün.ToString().Substring(17, 2);
+
+            if ((saatDakika == "00" && saatSaniye == "02") ||
+                (saatDakika == "15" && saatSaniye == "02") ||
+                (saatDakika == "30" && saatSaniye == "02") ||
+                (saatDakika == "45" && saatSaniye == "02") ||
+                (saatDakika == "00" && saatSaniye == "02"))
+            {
+                try
+                {
+                    randevulariTemizle();
+                    randevulariGetir();
+                }
+                catch (Exception)
+                {
+
+                }
+            }
+        }
+
+        public string şimdiDakika()
+        {
+            string saat_format = "mm";
+            DateTime şimdik = DateTime.Now;
+            string saat = Convert.ToString(şimdik.ToString(saat_format));
+            return saat;
+        }
+
+        public string şimdiSaniye()
+        {
+            string saat_format = "ss";
+            DateTime şimdik = DateTime.Now;
+            string saat = Convert.ToString(şimdik.ToString(saat_format));
+            return saat;
+        }
+
+        public string şimdiSaat()
+        {
+            string saat_format = "HH";
+            DateTime şimdik = DateTime.Now;
+            string saat = Convert.ToString(şimdik.ToString(saat_format));
+            return saat;
+        }
+        public string tarih()
+        {
+            string saat_format = "dd MMMM yyyy dddd";
+            DateTime şimdik = DateTime.Today;
+            string saat = Convert.ToString(şimdik.ToString(saat_format));
+            return saat;
         }
     }
 }
