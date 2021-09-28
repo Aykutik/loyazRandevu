@@ -117,20 +117,20 @@ namespace LOYAZ
 
         public void gridcontrolgöster()
         {
-            MySqlDataAdapter adp = new MySqlDataAdapter("select * from musteriler", blg.bağlantı());
+            MySqlDataAdapter adp = new MySqlDataAdapter("select * from musteri", blg.bağlantı());
             DataSet ds = new DataSet();
             adp.Fill(ds);
             gridControl_müşterilistesi.DataSource = ds.Tables[0];
         }
         public void gridcontrolgöster_cari()
         {
-            MySqlDataAdapter adp = new MySqlDataAdapter("select *from car_hareketler", blg.bağlantı());
-            DataTable ds = new DataTable();
-            adp.Fill(ds);
-            BindingSource bs = new BindingSource();
-            bs.DataSource = ds;
-            bs.Filter = "müşteri='"+lbl_id.Text+"'";
-            gridControl_müş_cari.DataSource = bs;
+            //MySqlDataAdapter adp = new MySqlDataAdapter("select *from car_hareketler", blg.bağlantı());
+            //DataTable ds = new DataTable();
+            //adp.Fill(ds);
+            //BindingSource bs = new BindingSource();
+            //bs.DataSource = ds;
+            //bs.Filter = "müşteri='"+lbl_id.Text+"'";
+            //gridControl_müş_cari.DataSource = bs;
         }
 
         private void gridControl1_MouseClick(object sender, MouseEventArgs e)
@@ -229,8 +229,8 @@ namespace LOYAZ
 
         private void btn_yenimüşteri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //frm_ms_yenimüşteri_frm frm = new frm_ms_yenimüşteri_frm();
-            //frm.Show();
+            frm_ms_yenimüşteri_frm frm = new frm_ms_yenimüşteri_frm();
+            frm.Show();
         }
 
         private void btn_müş_sil_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -247,16 +247,16 @@ namespace LOYAZ
         {
             try
             {
-                MySqlCommand komut_var = new MySqlCommand("select *from tanım_fatura_ödemeyöntemi where ödemeyöntemi=@id", blg.bağlantı());
-                komut_var.Parameters.AddWithValue("@id", "Peşin");
-                komut_var.ExecuteNonQuery();
-                MySqlDataReader oku_var = komut_var.ExecuteReader();
-                cmb_fatura_peşin.Properties.Items.Clear();
-                while (oku_var.Read())
-                {
-                    cmb_fatura_peşin.Properties.Items.Add(oku_var["ad"].ToString());
-                }
-                oku_var.Close();
+                //MySqlCommand komut_var = new MySqlCommand("select *from tanım_fatura_ödemeyöntemi where ödemeyöntemi=@id", blg.bağlantı());
+                //komut_var.Parameters.AddWithValue("@id", "Peşin");
+                //komut_var.ExecuteNonQuery();
+                //MySqlDataReader oku_var = komut_var.ExecuteReader();
+                //cmb_fatura_peşin.Properties.Items.Clear();
+                //while (oku_var.Read())
+                //{
+                //    cmb_fatura_peşin.Properties.Items.Add(oku_var["ad"].ToString());
+                //}
+                //oku_var.Close();
             }
             catch (Exception)
             {
@@ -511,65 +511,65 @@ namespace LOYAZ
 
         private void cariHesapla()
         {
-            double bakiye = 0.00;
-            double ödeme = 0.00;
-            double harcama = 0.00;
-            double kredi = 0.00;
-            double kalanKredi = 0.00;
+            //double bakiye = 0.00;
+            //double ödeme = 0.00;
+            //double harcama = 0.00;
+            //double kredi = 0.00;
+            //double kalanKredi = 0.00;
 
-            MySqlCommand msq = new MySqlCommand("select Sum(ödeme),Sum(harcama) from car_hareketler where müşteri=@id", blg.bağlantı());
-            msq.Parameters.Clear();
-            msq.Parameters.AddWithValue("@id", lbl_id.Text);
-            msq.ExecuteNonQuery();
-            MySqlDataReader oku_id = msq.ExecuteReader();
-            while (oku_id.Read())
-            {
-                try
-                {
-                    harcama = Convert.ToDouble(oku_id["Sum(harcama)"]);
-                }
-                catch (Exception)
-                {
-                    harcama = 0.00;
-                }
-                try
-                {
-                    ödeme = Convert.ToDouble(oku_id["Sum(ödeme)"]);
-                }
-                catch (Exception)
-                {
-                    ödeme = 0.00;
-                }
-            }
-            oku_id.Close();
+            //MySqlCommand msq = new MySqlCommand("select Sum(ödeme),Sum(harcama) from car_hareketler where müşteri=@id", blg.bağlantı());
+            //msq.Parameters.Clear();
+            //msq.Parameters.AddWithValue("@id", lbl_id.Text);
+            //msq.ExecuteNonQuery();
+            //MySqlDataReader oku_id = msq.ExecuteReader();
+            //while (oku_id.Read())
+            //{
+            //    try
+            //    {
+            //        harcama = Convert.ToDouble(oku_id["Sum(harcama)"]);
+            //    }
+            //    catch (Exception)
+            //    {
+            //        harcama = 0.00;
+            //    }
+            //    try
+            //    {
+            //        ödeme = Convert.ToDouble(oku_id["Sum(ödeme)"]);
+            //    }
+            //    catch (Exception)
+            //    {
+            //        ödeme = 0.00;
+            //    }
+            //}
+            //oku_id.Close();
 
-            bakiye = harcama - ödeme;
+            //bakiye = harcama - ödeme;
 
-            lbl_bakiye.Text = bakiye.ToString();
-            lbl_ödeme.Text = ödeme.ToString();
-            lbl_harcama.Text = harcama.ToString();
+            //lbl_bakiye.Text = bakiye.ToString();
+            //lbl_ödeme.Text = ödeme.ToString();
+            //lbl_harcama.Text = harcama.ToString();
 
-            MySqlCommand msq2 = new MySqlCommand("select kredi from musteriler where id=@id", blg.bağlantı());
-            msq2.Parameters.Clear();
-            msq2.Parameters.AddWithValue("@id", lbl_id.Text);
-            msq2.ExecuteNonQuery();
-            MySqlDataReader oku_id2 = msq2.ExecuteReader();
-            while (oku_id2.Read())
-            {
-                try
-                {
-                    kredi = Convert.ToDouble(oku_id2["kredi"]);
-                }
-                catch (Exception)
-                {
-                    kredi = 0.00;
-                }
-            }
-            oku_id2.Close();
+            //MySqlCommand msq2 = new MySqlCommand("select kredi from musteriler where id=@id", blg.bağlantı());
+            //msq2.Parameters.Clear();
+            //msq2.Parameters.AddWithValue("@id", lbl_id.Text);
+            //msq2.ExecuteNonQuery();
+            //MySqlDataReader oku_id2 = msq2.ExecuteReader();
+            //while (oku_id2.Read())
+            //{
+            //    try
+            //    {
+            //        kredi = Convert.ToDouble(oku_id2["kredi"]);
+            //    }
+            //    catch (Exception)
+            //    {
+            //        kredi = 0.00;
+            //    }
+            //}
+            //oku_id2.Close();
 
-            kalanKredi = kredi - bakiye;
+            //kalanKredi = kredi - bakiye;
 
-            lbl_kredi.Text = ""+kredi.ToString()+"/"+kalanKredi.ToString()+"";
+            //lbl_kredi.Text = ""+kredi.ToString()+"/"+kalanKredi.ToString()+"";
 
         }
 

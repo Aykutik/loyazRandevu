@@ -16,9 +16,6 @@ namespace LOYAZ
     {
         public MySqlConnection bağlantı()
         {
-
-
-
             //string bağlantıadresi = "Server = loyaz.net; Database = u477970783_tanlas; Convert Zero Datetime=true; uid = u477970783_aykutik;persistsecurityinfo=True; Password = aykuT18092007;SSL Mode=none";
             string bağlantıadresi = "";
 

@@ -106,8 +106,6 @@ namespace LOYAZ
             oku.Close();
         }
 
-
-
         public void gridkontrolgöster()
         {
             MySqlDataAdapter adp = new MySqlDataAdapter("select * from servis_hareketler", blg.bağlantı());
@@ -468,7 +466,6 @@ namespace LOYAZ
         public string musteriId = "";
         public string randevuTarih = "";
 
-  
 
         private void gridControl_tamamlanan_Click(object sender, EventArgs e)
         {
@@ -497,7 +494,6 @@ namespace LOYAZ
                 
             }
         }
-
 
 
         private void gridControl1_Click(object sender, EventArgs e)

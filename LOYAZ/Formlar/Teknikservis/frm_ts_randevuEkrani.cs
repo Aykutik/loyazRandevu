@@ -82,7 +82,6 @@ namespace LOYAZ.Formlar.Teknikservis
             }
             oku_firmaad.Close();
             bağlantı.Close();
-
         }
         
 
