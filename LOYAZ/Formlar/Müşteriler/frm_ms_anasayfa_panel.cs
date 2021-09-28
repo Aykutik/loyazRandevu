@@ -117,7 +117,7 @@ namespace LOYAZ
 
         public void gridcontrolgöster()
         {
-            MySqlDataAdapter adp = new MySqlDataAdapter("select * from musteriler", blg.bağlantı());
+            MySqlDataAdapter adp = new MySqlDataAdapter("select * from musteri", blg.bağlantı());
             DataSet ds = new DataSet();
             adp.Fill(ds);
             gridControl_müşterilistesi.DataSource = ds.Tables[0];
@@ -229,8 +229,8 @@ namespace LOYAZ
 
         private void btn_yenimüşteri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //frm_ms_yenimüşteri_frm frm = new frm_ms_yenimüşteri_frm();
-            //frm.Show();
+            frm_ms_yenimüşteri_frm frm = new frm_ms_yenimüşteri_frm();
+            frm.Show();
         }
 
         private void btn_müş_sil_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
