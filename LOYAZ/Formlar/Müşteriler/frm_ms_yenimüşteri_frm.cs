@@ -169,16 +169,92 @@ namespace LOYAZ
 
             //Arac bilgileri getir
             MySqlCommand komut = new MySqlCommand("select distinct arac from tanim_arac", blg.bağlantı());
-            komut.Parameters.Clear();
-            komut.Parameters.AddWithValue("@tel", txt_telefon.Text.ToString().Trim());
             komut.ExecuteNonQuery();
             MySqlDataReader oku = komut.ExecuteReader();
+            comboBoxEdit_aracArac.Properties.Items.Clear();
+            comboBoxEdit_AracYil.Properties.Items.Clear();
+            lbl_aracSeri.Text = "Seçim bekleniyor.";
+            lbl_AracModel.Text = "Seçim bekleniyor.";
+
             while (oku.Read())
             {
                 comboBoxEdit_aracArac.Properties.Items.Add(oku["arac"]);
             }
 
             comboBoxEdit_aracArac.Text = "Otomobil";
+
+            //lastik bilgileri
+            //marka bilgilerini yükle
+            MySqlCommand komutMarka = new MySqlCommand("select distinct marka from tanim_lastik", blg.bağlantı());
+            komutMarka.ExecuteNonQuery();
+            MySqlDataReader okuMarka = komutMarka.ExecuteReader();
+            comboBoxEdit_lastikMarka.Properties.Items.Clear();
+
+            while (okuMarka.Read())
+            {
+                comboBoxEdit_lastikMarka.Properties.Items.Add(okuMarka["marka"]);
+            }
+            okuMarka.Close();
+            //jantçap bilgilerini yükle
+            MySqlCommand komutJant = new MySqlCommand("select distinct jantcap from tanim_lastik", blg.bağlantı());
+            komutJant.ExecuteNonQuery();
+            MySqlDataReader okuJant = komutJant.ExecuteReader();
+            comboBoxEdit_lastikJantcap.Properties.Items.Clear();
+            while (okuJant.Read())
+            {
+                comboBoxEdit_lastikJantcap.Properties.Items.Add(okuJant["jantcap"]);
+            }
+            okuJant.Close();
+            //Taban Genişlik bilgilerini yükle
+            MySqlCommand komuttaban = new MySqlCommand("select distinct tabangenislik from tanim_lastik", blg.bağlantı());
+            komuttaban.ExecuteNonQuery();
+            MySqlDataReader okuTaban = komuttaban.ExecuteReader();
+            comboBoxEdit_lastikTabanGenislik.Properties.Items.Clear();
+            while (okuTaban.Read())
+            {
+                comboBoxEdit_lastikTabanGenislik.Properties.Items.Add(okuTaban["tabangenislik"]);
+            }
+            okuTaban.Close();
+            //Taban Genişlik bilgilerini yükle
+            MySqlCommand komutkesitorani = new MySqlCommand("select distinct kesitorani from tanim_lastik", blg.bağlantı());
+            komutkesitorani.ExecuteNonQuery();
+            MySqlDataReader okukesitorani = komutkesitorani.ExecuteReader();
+            comboBoxEdit_lastikKesitOrani.Properties.Items.Clear();
+            while (okukesitorani.Read())
+            {
+                comboBoxEdit_lastikKesitOrani.Properties.Items.Add(okukesitorani["kesitorani"]);
+            }
+            okukesitorani.Close();
+            //Taban Genişlik bilgilerini yükle
+            MySqlCommand komutHizkodu = new MySqlCommand("select distinct hizkodu from tanim_lastik", blg.bağlantı());
+            komutHizkodu.ExecuteNonQuery();
+            MySqlDataReader okuHizkodu = komutHizkodu.ExecuteReader();
+            comboBoxEdit_lastikHizKodu.Properties.Items.Clear();
+            while (okuHizkodu.Read())
+            {
+                comboBoxEdit_lastikHizKodu.Properties.Items.Add(okuHizkodu["hizkodu"]);
+            }
+            okuHizkodu.Close();
+            //Taban Genişlik bilgilerini yükle
+            MySqlCommand komutyuzendeks = new MySqlCommand("select distinct yuzendeks from tanim_lastik", blg.bağlantı());
+            komutyuzendeks.ExecuteNonQuery();
+            MySqlDataReader okuyuzendeks = komutyuzendeks.ExecuteReader();
+            comboBoxEdit_lastikYuzEndeks.Properties.Items.Clear();
+            while (okuyuzendeks.Read())
+            {
+                comboBoxEdit_lastikYuzEndeks.Properties.Items.Add(okuyuzendeks["yuzendeks"]);
+            }
+            okuyuzendeks.Close();
+            //Taban Genişlik bilgilerini yükle
+            MySqlCommand komutMevsim = new MySqlCommand("select distinct mevsim from tanim_lastik", blg.bağlantı());
+            komutMevsim.ExecuteNonQuery();
+            MySqlDataReader okuMevsim = komutMevsim.ExecuteReader();
+            comboBoxEdit_lastikMevsim.Properties.Items.Clear();
+            while (okuMevsim.Read())
+            {
+                comboBoxEdit_lastikMevsim.Properties.Items.Add(okuMevsim["mevsim"]);
+            }
+            okuMevsim.Close();
         }
 
         #endregion
