@@ -35,15 +35,14 @@ namespace LOYAZ
             fs.Close();
 
             MySqlConnection bağlantı = new MySqlConnection(bağlantıadresi);
-            if (bağlantı.State == ConnectionState.Open)
-            {
-                bağlantı.Close();
-            }
+            //if (bağlantı.State == ConnectionState.Open)
+            //{
+            //    bağlantı.Close();
+            //}
 
 
             bağlantı.Open();
             return bağlantı;
-            bağlantı.Close();
         }
 
         public string macAlDsyadan()

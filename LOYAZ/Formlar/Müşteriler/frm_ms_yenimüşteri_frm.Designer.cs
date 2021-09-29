@@ -1,6 +1,6 @@
 ﻿namespace LOYAZ
 {
-    partial class frm_ms_yenimüşteri_frm
+    partial class FrmMsYenimüşteriFrm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ms_yenimüşteri_frm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMsYenimüşteriFrm));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
@@ -60,9 +60,9 @@
             this.lbl_müş_id_aktar = new DevExpress.XtraEditors.LabelControl();
             this.splashScreenManager2 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::LOYAZ.yük_kaydediliyor), true, true);
             this.groupControl_yenimüşteri = new DevExpress.XtraEditors.GroupControl();
-            this.xtraTabControl_Ana = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabControl_AnaArac = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPageKisiselBilgiler = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabPageAnaArac = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPageAnaKisiselBilgiler = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
@@ -131,10 +131,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl_yenimüşteri)).BeginInit();
             this.groupControl_yenimüşteri.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_Ana)).BeginInit();
-            this.xtraTabControl_Ana.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_AnaArac)).BeginInit();
+            this.xtraTabControl_AnaArac.SuspendLayout();
+            this.xtraTabPageKisiselBilgiler.SuspendLayout();
             this.xtraTabPageAnaArac.SuspendLayout();
-            this.xtraTabPageAnaKisiselBilgiler.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage3.SuspendLayout();
@@ -444,30 +444,30 @@
             this.groupControl_yenimüşteri.TabIndex = 4;
             this.groupControl_yenimüşteri.Text = "groupControl_yenimüşteri";
             // 
-            // xtraTabControl_Ana
+            // xtraTabControl_AnaArac
             // 
-            this.xtraTabControl_Ana.Location = new System.Drawing.Point(0, 80);
-            this.xtraTabControl_Ana.Name = "xtraTabControl_Ana";
-            this.xtraTabControl_Ana.SelectedTabPage = this.xtraTabPageAnaArac;
-            this.xtraTabControl_Ana.Size = new System.Drawing.Size(708, 353);
-            this.xtraTabControl_Ana.TabIndex = 5;
-            this.xtraTabControl_Ana.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPageAnaArac,
-            this.xtraTabPageAnaKisiselBilgiler});
+            this.xtraTabControl_AnaArac.Location = new System.Drawing.Point(0, 80);
+            this.xtraTabControl_AnaArac.Name = "xtraTabControl_AnaArac";
+            this.xtraTabControl_AnaArac.SelectedTabPage = this.xtraTabPageKisiselBilgiler;
+            this.xtraTabControl_AnaArac.Size = new System.Drawing.Size(708, 353);
+            this.xtraTabControl_AnaArac.TabIndex = 5;
+            this.xtraTabControl_AnaArac.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPageKisiselBilgiler,
+            this.xtraTabPageAnaArac});
+            // 
+            // xtraTabPageKisiselBilgiler
+            // 
+            this.xtraTabPageKisiselBilgiler.Controls.Add(this.panelControl1);
+            this.xtraTabPageKisiselBilgiler.Name = "xtraTabPageKisiselBilgiler";
+            this.xtraTabPageKisiselBilgiler.Size = new System.Drawing.Size(702, 325);
+            this.xtraTabPageKisiselBilgiler.Text = "Kişisel Bilgiler";
             // 
             // xtraTabPageAnaArac
             // 
-            this.xtraTabPageAnaArac.Controls.Add(this.panelControl1);
+            this.xtraTabPageAnaArac.Controls.Add(this.xtraTabControl2);
             this.xtraTabPageAnaArac.Name = "xtraTabPageAnaArac";
             this.xtraTabPageAnaArac.Size = new System.Drawing.Size(702, 325);
-            this.xtraTabPageAnaArac.Text = "Kişisel Bilgiler";
-            // 
-            // xtraTabPageAnaKisiselBilgiler
-            // 
-            this.xtraTabPageAnaKisiselBilgiler.Controls.Add(this.xtraTabControl2);
-            this.xtraTabPageAnaKisiselBilgiler.Name = "xtraTabPageAnaKisiselBilgiler";
-            this.xtraTabPageAnaKisiselBilgiler.Size = new System.Drawing.Size(702, 325);
-            this.xtraTabPageAnaKisiselBilgiler.Text = "Araç";
+            this.xtraTabPageAnaArac.Text = "Araç";
             // 
             // xtraTabControl2
             // 
@@ -906,16 +906,16 @@
             this.xtraTabPage4.Size = new System.Drawing.Size(660, 270);
             this.xtraTabPage4.Text = "Arac 2";
             // 
-            // frm_ms_yenimüşteri_frm
+            // FrmMsYenimüşteriFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 444);
             this.Controls.Add(this.ribbonControl1);
-            this.Controls.Add(this.xtraTabControl_Ana);
+            this.Controls.Add(this.xtraTabControl_AnaArac);
             this.Controls.Add(this.groupControl_yenimüşteri);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "frm_ms_yenimüşteri_frm";
+            this.Name = "FrmMsYenimüşteriFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YENİ MÜŞTERİ";
             this.Load += new System.EventHandler(this.frm_ms_yenimüşteri_frm_Load);
@@ -945,10 +945,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl_yenimüşteri)).EndInit();
             this.groupControl_yenimüşteri.ResumeLayout(false);
             this.groupControl_yenimüşteri.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_Ana)).EndInit();
-            this.xtraTabControl_Ana.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_AnaArac)).EndInit();
+            this.xtraTabControl_AnaArac.ResumeLayout(false);
+            this.xtraTabPageKisiselBilgiler.ResumeLayout(false);
             this.xtraTabPageAnaArac.ResumeLayout(false);
-            this.xtraTabPageAnaKisiselBilgiler.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).EndInit();
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage3.ResumeLayout(false);
@@ -1002,9 +1002,9 @@
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager2;
         private DevExpress.XtraEditors.GroupControl groupControl_yenimüşteri;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
-        private DevExpress.XtraTab.XtraTabControl xtraTabControl_Ana;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl_AnaArac;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPageKisiselBilgiler;
         private DevExpress.XtraTab.XtraTabPage xtraTabPageAnaArac;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPageAnaKisiselBilgiler;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl2;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage4;

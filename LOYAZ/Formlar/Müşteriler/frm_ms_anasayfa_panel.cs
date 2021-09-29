@@ -229,7 +229,7 @@ namespace LOYAZ
 
         private void btn_yenimüşteri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frm_ms_yenimüşteri_frm frm = new frm_ms_yenimüşteri_frm();
+            FrmMsYenimüşteriFrm frm = new FrmMsYenimüşteriFrm();
             frm.Show();
             frm.neredenGelen = "yeni";
         }

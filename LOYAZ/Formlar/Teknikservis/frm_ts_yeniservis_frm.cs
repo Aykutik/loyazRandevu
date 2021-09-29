@@ -55,10 +55,10 @@ namespace LOYAZ
 
         private void btn_yenimüşteri_Click(object sender, EventArgs e)
         {            
-            frm_ms_yenimüşteri_frm frm = new frm_ms_yenimüşteri_frm();
+            FrmMsYenimüşteriFrm frm = new FrmMsYenimüşteriFrm();
             frm.Show();
 
-            frm_ms_yenimüşteri_frm yeni = (frm_ms_yenimüşteri_frm)Application.OpenForms["frm_ms_yenimüşteri_frm"];
+            FrmMsYenimüşteriFrm yeni = (FrmMsYenimüşteriFrm)Application.OpenForms["frm_ms_yenimüşteri_frm"];
             yeni.neredenGelen = "servisden";
             
         }
