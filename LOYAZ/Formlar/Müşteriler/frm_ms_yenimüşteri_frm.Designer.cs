@@ -39,22 +39,22 @@
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.txt_eposta = new DevExpress.XtraEditors.TextEdit();
-            this.btn_kaydet = new DevExpress.XtraEditors.SimpleButton();
             this.txt_telefon = new DevExpress.XtraEditors.TextEdit();
             this.txt_adsoyad = new DevExpress.XtraEditors.TextEdit();
             this.txt_adres = new DevExpress.XtraEditors.MemoEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem28 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem9 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem5 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.lbl_nereden = new DevExpress.XtraEditors.LabelControl();
             this.lbl_müş_id_aktar = new DevExpress.XtraEditors.LabelControl();
@@ -65,39 +65,17 @@
             this.xtraTabPageAnaKisiselBilgiler = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
-            this.layoutControl6 = new DevExpress.XtraLayout.LayoutControl();
-            this.comboBoxEditAracLastikKisim = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.comboBoxEditAracLastikBolum = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem10 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem30 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
-            this.searchLookUpEditAracLastikMevsim = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.searchLookUpEdit9View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.searchLookUpEditAracLastikYuz = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.searchLookUpEdit8View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.searchLookUpEditAracLastikHiz = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.searchLookUpEdit7View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.searchLookUpEditAracLastikKesit = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.searchLookUpEditAracLastikTaban = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.searchLookUpEditAracLastikJantcap = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.searchLookUpEditAracLastikMarka = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.lbl_aracSeri = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.lbl_AracModel = new DevExpress.XtraEditors.LabelControl();
             this.comboBoxEdit_aracArac = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEdit_aracPlaka = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.comboBoxEdit_AracYil = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.searchLookUpEditAracMarka = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEditGrid_AracMarka = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -105,12 +83,27 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.lbl_AracModel = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.lbl_aracSeri = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.comboBoxEdit_lastikKonumKisim = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEdit_lastikKonumBolum = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.comboBoxEdit_lastikMevsim = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEdit_lastikYuzEndeks = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEdit_lastikHizKodu = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEdit_lastikKesitOrani = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEdit_lastikTabanGenislik = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEdit_lastikJantcap = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEdit_lastikMarka = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             this.layoutControl5 = new DevExpress.XtraLayout.LayoutControl();
             this.searchLookUpEdit14 = new DevExpress.XtraEditors.SearchLookUpEdit();
@@ -152,7 +145,6 @@
             this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -166,15 +158,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl_yenimüşteri)).BeginInit();
             this.groupControl_yenimüşteri.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -184,43 +177,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl6)).BeginInit();
-            this.layoutControl6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditAracLastikKisim.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditAracLastikBolum.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).BeginInit();
-            this.layoutControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikMevsim.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit9View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikYuz.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit8View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikHiz.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit7View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikKesit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikTaban.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikJantcap.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikMarka.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_aracArac.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_aracPlaka.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_AracYil.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracMarka.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditGrid_AracMarka)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikKonumKisim.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikKonumBolum.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikMevsim.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikYuzEndeks.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikHizKodu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikKesitOrani.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikTabanGenislik.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikJantcap.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikMarka.Properties)).BeginInit();
             this.xtraTabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl5)).BeginInit();
             this.layoutControl5.SuspendLayout();
@@ -273,34 +249,33 @@
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.layoutControl1);
-            this.panelControl1.Location = new System.Drawing.Point(3, 3);
+            this.panelControl1.Location = new System.Drawing.Point(11, 14);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(386, 395);
+            this.panelControl1.Size = new System.Drawing.Size(570, 164);
             this.panelControl1.TabIndex = 0;
             // 
             // layoutControl1
             // 
             this.layoutControl1.Controls.Add(this.textEdit1);
             this.layoutControl1.Controls.Add(this.txt_eposta);
-            this.layoutControl1.Controls.Add(this.btn_kaydet);
             this.layoutControl1.Controls.Add(this.txt_telefon);
             this.layoutControl1.Controls.Add(this.txt_adsoyad);
             this.layoutControl1.Controls.Add(this.txt_adres);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(2, 2);
             this.layoutControl1.Name = "layoutControl1";
-            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(645, 272, 650, 400);
+            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(617, 562, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(382, 391);
+            this.layoutControl1.Size = new System.Drawing.Size(566, 160);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(80, 48);
+            this.textEdit1.Location = new System.Drawing.Point(80, 46);
             this.textEdit1.MenuManager = this.ribbonControl1;
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(290, 20);
+            this.textEdit1.Size = new System.Drawing.Size(185, 20);
             this.textEdit1.StyleController = this.layoutControl1;
             this.textEdit1.TabIndex = 10;
             // 
@@ -322,7 +297,7 @@
             this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.ShowOnMultiplePages;
             this.ribbonControl1.ShowQatLocationSelector = false;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(1140, 80);
+            this.ribbonControl1.Size = new System.Drawing.Size(717, 80);
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
@@ -349,29 +324,19 @@
             // 
             // txt_eposta
             // 
-            this.txt_eposta.Location = new System.Drawing.Point(80, 124);
+            this.txt_eposta.Location = new System.Drawing.Point(80, 114);
             this.txt_eposta.Name = "txt_eposta";
-            this.txt_eposta.Size = new System.Drawing.Size(290, 20);
+            this.txt_eposta.Size = new System.Drawing.Size(185, 20);
             this.txt_eposta.StyleController = this.layoutControl1;
             this.txt_eposta.TabIndex = 9;
             // 
-            // btn_kaydet
-            // 
-            this.btn_kaydet.Location = new System.Drawing.Point(12, 357);
-            this.btn_kaydet.Name = "btn_kaydet";
-            this.btn_kaydet.Size = new System.Drawing.Size(358, 22);
-            this.btn_kaydet.StyleController = this.layoutControl1;
-            this.btn_kaydet.TabIndex = 8;
-            this.btn_kaydet.Text = "Kaydet";
-            this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
-            // 
             // txt_telefon
             // 
-            this.txt_telefon.Location = new System.Drawing.Point(80, 88);
+            this.txt_telefon.Location = new System.Drawing.Point(80, 80);
             this.txt_telefon.Name = "txt_telefon";
             this.txt_telefon.Properties.Mask.EditMask = "0(999) 000 0000";
             this.txt_telefon.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
-            this.txt_telefon.Size = new System.Drawing.Size(290, 20);
+            this.txt_telefon.Size = new System.Drawing.Size(185, 20);
             this.txt_telefon.StyleController = this.layoutControl1;
             this.txt_telefon.TabIndex = 5;
             this.txt_telefon.Leave += new System.EventHandler(this.txt_iletişim_Leave);
@@ -381,15 +346,15 @@
             // 
             this.txt_adsoyad.Location = new System.Drawing.Point(80, 12);
             this.txt_adsoyad.Name = "txt_adsoyad";
-            this.txt_adsoyad.Size = new System.Drawing.Size(290, 20);
+            this.txt_adsoyad.Size = new System.Drawing.Size(185, 20);
             this.txt_adsoyad.StyleController = this.layoutControl1;
             this.txt_adsoyad.TabIndex = 4;
             // 
             // txt_adres
             // 
-            this.txt_adres.Location = new System.Drawing.Point(80, 166);
+            this.txt_adres.Location = new System.Drawing.Point(347, 12);
             this.txt_adres.Name = "txt_adres";
-            this.txt_adres.Size = new System.Drawing.Size(290, 98);
+            this.txt_adres.Size = new System.Drawing.Size(190, 42);
             this.txt_adres.StyleController = this.layoutControl1;
             this.txt_adres.TabIndex = 6;
             // 
@@ -400,17 +365,18 @@
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
             this.layoutControlItem2,
-            this.layoutControlItem3,
-            this.layoutControlItem5,
             this.emptySpaceItem1,
-            this.emptySpaceItem2,
-            this.emptySpaceItem3,
             this.layoutControlItem4,
             this.emptySpaceItem4,
             this.layoutControlItem28,
-            this.emptySpaceItem9});
+            this.emptySpaceItem9,
+            this.emptySpaceItem5,
+            this.layoutControlItem3,
+            this.emptySpaceItem2,
+            this.emptySpaceItem6,
+            this.emptySpaceItem3});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(382, 391);
+            this.Root.Size = new System.Drawing.Size(566, 160);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -419,7 +385,7 @@
             this.layoutControlItem1.CustomizationFormText = "Adı Soyadı";
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(362, 24);
+            this.layoutControlItem1.Size = new System.Drawing.Size(257, 24);
             this.layoutControlItem1.Text = "Adı Soyadı";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(65, 13);
             // 
@@ -427,80 +393,43 @@
             // 
             this.layoutControlItem2.Control = this.txt_telefon;
             this.layoutControlItem2.CustomizationFormText = "İletişim";
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 76);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 68);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(362, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(257, 24);
             this.layoutControlItem2.Text = "Telefon";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(65, 13);
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.txt_adres;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 154);
-            this.layoutControlItem3.MinSize = new System.Drawing.Size(68, 20);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(362, 102);
-            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem3.Text = "Adres";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(65, 13);
-            // 
-            // layoutControlItem5
-            // 
-            this.layoutControlItem5.Control = this.btn_kaydet;
-            this.layoutControlItem5.CustomizationFormText = "Kaydet";
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 345);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(362, 26);
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem5.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 60);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 58);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(362, 16);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(257, 10);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem2
-            // 
-            this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 136);
-            this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(362, 18);
-            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem3
-            // 
-            this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 256);
-            this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(362, 89);
-            this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.txt_eposta;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 112);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 102);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(362, 24);
+            this.layoutControlItem4.Size = new System.Drawing.Size(257, 24);
             this.layoutControlItem4.Text = "E-posta";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(65, 13);
             // 
             // emptySpaceItem4
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 100);
+            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 92);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(362, 12);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(257, 10);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem28
             // 
             this.layoutControlItem28.Control = this.textEdit1;
-            this.layoutControlItem28.Location = new System.Drawing.Point(0, 36);
+            this.layoutControlItem28.Location = new System.Drawing.Point(0, 34);
             this.layoutControlItem28.Name = "layoutControlItem28";
-            this.layoutControlItem28.Size = new System.Drawing.Size(362, 24);
+            this.layoutControlItem28.Size = new System.Drawing.Size(257, 24);
             this.layoutControlItem28.Text = "T.C. Kimlik No";
             this.layoutControlItem28.TextSize = new System.Drawing.Size(65, 13);
             // 
@@ -509,8 +438,51 @@
             this.emptySpaceItem9.AllowHotTrack = false;
             this.emptySpaceItem9.Location = new System.Drawing.Point(0, 24);
             this.emptySpaceItem9.Name = "emptySpaceItem9";
-            this.emptySpaceItem9.Size = new System.Drawing.Size(362, 12);
+            this.emptySpaceItem9.Size = new System.Drawing.Size(257, 10);
             this.emptySpaceItem9.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem5
+            // 
+            this.emptySpaceItem5.AllowHotTrack = false;
+            this.emptySpaceItem5.Location = new System.Drawing.Point(529, 0);
+            this.emptySpaceItem5.Name = "emptySpaceItem5";
+            this.emptySpaceItem5.Size = new System.Drawing.Size(17, 46);
+            this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.txt_adres;
+            this.layoutControlItem3.Location = new System.Drawing.Point(267, 0);
+            this.layoutControlItem3.MinSize = new System.Drawing.Size(68, 20);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(262, 46);
+            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem3.Text = "Adres";
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(65, 13);
+            // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 126);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(546, 14);
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem6
+            // 
+            this.emptySpaceItem6.AllowHotTrack = false;
+            this.emptySpaceItem6.Location = new System.Drawing.Point(267, 46);
+            this.emptySpaceItem6.Name = "emptySpaceItem6";
+            this.emptySpaceItem6.Size = new System.Drawing.Size(279, 80);
+            this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem3
+            // 
+            this.emptySpaceItem3.AllowHotTrack = false;
+            this.emptySpaceItem3.Location = new System.Drawing.Point(257, 0);
+            this.emptySpaceItem3.Name = "emptySpaceItem3";
+            this.emptySpaceItem3.Size = new System.Drawing.Size(10, 126);
+            this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // labelControl1
             // 
@@ -545,7 +517,7 @@
             this.groupControl_yenimüşteri.Controls.Add(this.labelControl1);
             this.groupControl_yenimüşteri.Controls.Add(this.lbl_müş_id_aktar);
             this.groupControl_yenimüşteri.Controls.Add(this.lbl_nereden);
-            this.groupControl_yenimüşteri.Location = new System.Drawing.Point(823, 627);
+            this.groupControl_yenimüşteri.Location = new System.Drawing.Point(12, 448);
             this.groupControl_yenimüşteri.Name = "groupControl_yenimüşteri";
             this.groupControl_yenimüşteri.ShowCaption = false;
             this.groupControl_yenimüşteri.Size = new System.Drawing.Size(305, 24);
@@ -557,7 +529,7 @@
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 80);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPageAnaArac;
-            this.xtraTabControl1.Size = new System.Drawing.Size(966, 596);
+            this.xtraTabControl1.Size = new System.Drawing.Size(708, 353);
             this.xtraTabControl1.TabIndex = 5;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPageAnaArac,
@@ -567,14 +539,14 @@
             // 
             this.xtraTabPageAnaArac.Controls.Add(this.panelControl1);
             this.xtraTabPageAnaArac.Name = "xtraTabPageAnaArac";
-            this.xtraTabPageAnaArac.Size = new System.Drawing.Size(960, 568);
+            this.xtraTabPageAnaArac.Size = new System.Drawing.Size(754, 325);
             this.xtraTabPageAnaArac.Text = "Kişisel Bilgiler";
             // 
             // xtraTabPageAnaKisiselBilgiler
             // 
             this.xtraTabPageAnaKisiselBilgiler.Controls.Add(this.xtraTabControl2);
             this.xtraTabPageAnaKisiselBilgiler.Name = "xtraTabPageAnaKisiselBilgiler";
-            this.xtraTabPageAnaKisiselBilgiler.Size = new System.Drawing.Size(960, 568);
+            this.xtraTabPageAnaKisiselBilgiler.Size = new System.Drawing.Size(702, 325);
             this.xtraTabPageAnaKisiselBilgiler.Text = "Araç";
             // 
             // xtraTabControl2
@@ -582,7 +554,7 @@
             this.xtraTabControl2.Location = new System.Drawing.Point(13, 13);
             this.xtraTabControl2.Name = "xtraTabControl2";
             this.xtraTabControl2.SelectedTabPage = this.xtraTabPage3;
-            this.xtraTabControl2.Size = new System.Drawing.Size(521, 529);
+            this.xtraTabControl2.Size = new System.Drawing.Size(666, 298);
             this.xtraTabControl2.TabIndex = 7;
             this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage3,
@@ -590,330 +562,72 @@
             // 
             // xtraTabPage3
             // 
-            this.xtraTabPage3.Controls.Add(this.layoutControl6);
-            this.xtraTabPage3.Controls.Add(this.layoutControl3);
-            this.xtraTabPage3.Controls.Add(this.comboBoxEdit_aracArac);
-            this.xtraTabPage3.Controls.Add(this.comboBoxEdit_AracYil);
-            this.xtraTabPage3.Controls.Add(this.searchLookUpEditAracMarka);
-            this.xtraTabPage3.Controls.Add(this.labelControl5);
-            this.xtraTabPage3.Controls.Add(this.labelControl3);
-            this.xtraTabPage3.Controls.Add(this.labelControl6);
-            this.xtraTabPage3.Controls.Add(this.labelControl4);
-            this.xtraTabPage3.Controls.Add(this.lbl_AracModel);
-            this.xtraTabPage3.Controls.Add(this.labelControl2);
-            this.xtraTabPage3.Controls.Add(this.lbl_aracSeri);
+            this.xtraTabPage3.Controls.Add(this.groupControl3);
+            this.xtraTabPage3.Controls.Add(this.groupControl2);
+            this.xtraTabPage3.Controls.Add(this.groupControl1);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(515, 501);
+            this.xtraTabPage3.Size = new System.Drawing.Size(660, 270);
             this.xtraTabPage3.Text = "Arac 1";
             // 
-            // layoutControl6
+            // groupControl3
             // 
-            this.layoutControl6.Controls.Add(this.comboBoxEditAracLastikKisim);
-            this.layoutControl6.Controls.Add(this.comboBoxEditAracLastikBolum);
-            this.layoutControl6.Location = new System.Drawing.Point(23, 408);
-            this.layoutControl6.Name = "layoutControl6";
-            this.layoutControl6.Root = this.layoutControlGroup5;
-            this.layoutControl6.Size = new System.Drawing.Size(148, 86);
-            this.layoutControl6.TabIndex = 1;
-            this.layoutControl6.Text = "layoutControl6";
+            this.groupControl3.Controls.Add(this.labelControl5);
+            this.groupControl3.Controls.Add(this.lbl_aracSeri);
+            this.groupControl3.Controls.Add(this.labelControl2);
+            this.groupControl3.Controls.Add(this.lbl_AracModel);
+            this.groupControl3.Controls.Add(this.comboBoxEdit_aracArac);
+            this.groupControl3.Controls.Add(this.labelControl4);
+            this.groupControl3.Controls.Add(this.comboBoxEdit_aracPlaka);
+            this.groupControl3.Controls.Add(this.labelControl16);
+            this.groupControl3.Controls.Add(this.comboBoxEdit_AracYil);
+            this.groupControl3.Controls.Add(this.labelControl6);
+            this.groupControl3.Controls.Add(this.searchLookUpEditAracMarka);
+            this.groupControl3.Controls.Add(this.labelControl3);
+            this.groupControl3.Location = new System.Drawing.Point(14, 18);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(229, 227);
+            this.groupControl3.TabIndex = 12;
+            this.groupControl3.Text = "Araç Bilgileri";
             // 
-            // comboBoxEditAracLastikKisim
+            // labelControl5
             // 
-            this.comboBoxEditAracLastikKisim.Location = new System.Drawing.Point(43, 36);
-            this.comboBoxEditAracLastikKisim.MenuManager = this.ribbonControl1;
-            this.comboBoxEditAracLastikKisim.Name = "comboBoxEditAracLastikKisim";
-            this.comboBoxEditAracLastikKisim.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEditAracLastikKisim.Size = new System.Drawing.Size(93, 20);
-            this.comboBoxEditAracLastikKisim.StyleController = this.layoutControl6;
-            this.comboBoxEditAracLastikKisim.TabIndex = 5;
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(16, 40);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(26, 13);
+            this.labelControl5.TabIndex = 8;
+            this.labelControl5.Text = "Araç";
             // 
-            // comboBoxEditAracLastikBolum
+            // lbl_aracSeri
             // 
-            this.comboBoxEditAracLastikBolum.Location = new System.Drawing.Point(43, 12);
-            this.comboBoxEditAracLastikBolum.MenuManager = this.ribbonControl1;
-            this.comboBoxEditAracLastikBolum.Name = "comboBoxEditAracLastikBolum";
-            this.comboBoxEditAracLastikBolum.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEditAracLastikBolum.Size = new System.Drawing.Size(93, 20);
-            this.comboBoxEditAracLastikBolum.StyleController = this.layoutControl6;
-            this.comboBoxEditAracLastikBolum.TabIndex = 4;
+            this.lbl_aracSeri.Location = new System.Drawing.Point(57, 89);
+            this.lbl_aracSeri.Name = "lbl_aracSeri";
+            this.lbl_aracSeri.Size = new System.Drawing.Size(63, 13);
+            this.lbl_aracSeri.TabIndex = 7;
+            this.lbl_aracSeri.Text = "labelControl3";
             // 
-            // layoutControlGroup5
+            // labelControl2
             // 
-            this.layoutControlGroup5.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup5.GroupBordersVisible = false;
-            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem29,
-            this.emptySpaceItem10,
-            this.layoutControlItem30});
-            this.layoutControlGroup5.Name = "layoutControlGroup5";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(148, 86);
-            this.layoutControlGroup5.TextVisible = false;
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(16, 89);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(22, 13);
+            this.labelControl2.TabIndex = 6;
+            this.labelControl2.Text = "Seri";
             // 
-            // layoutControlItem29
+            // lbl_AracModel
             // 
-            this.layoutControlItem29.Control = this.comboBoxEditAracLastikBolum;
-            this.layoutControlItem29.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem29.Name = "layoutControlItem29";
-            this.layoutControlItem29.Size = new System.Drawing.Size(128, 24);
-            this.layoutControlItem29.Text = "Bölüm";
-            this.layoutControlItem29.TextSize = new System.Drawing.Size(28, 13);
-            // 
-            // emptySpaceItem10
-            // 
-            this.emptySpaceItem10.AllowHotTrack = false;
-            this.emptySpaceItem10.Location = new System.Drawing.Point(0, 48);
-            this.emptySpaceItem10.Name = "emptySpaceItem10";
-            this.emptySpaceItem10.Size = new System.Drawing.Size(128, 18);
-            this.emptySpaceItem10.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // layoutControlItem30
-            // 
-            this.layoutControlItem30.Control = this.comboBoxEditAracLastikKisim;
-            this.layoutControlItem30.Location = new System.Drawing.Point(0, 24);
-            this.layoutControlItem30.Name = "layoutControlItem30";
-            this.layoutControlItem30.Size = new System.Drawing.Size(128, 24);
-            this.layoutControlItem30.Text = "Kısım";
-            this.layoutControlItem30.TextSize = new System.Drawing.Size(28, 13);
-            // 
-            // layoutControl3
-            // 
-            this.layoutControl3.Controls.Add(this.searchLookUpEditAracLastikMevsim);
-            this.layoutControl3.Controls.Add(this.searchLookUpEditAracLastikYuz);
-            this.layoutControl3.Controls.Add(this.searchLookUpEditAracLastikHiz);
-            this.layoutControl3.Controls.Add(this.searchLookUpEditAracLastikKesit);
-            this.layoutControl3.Controls.Add(this.searchLookUpEditAracLastikTaban);
-            this.layoutControl3.Controls.Add(this.searchLookUpEditAracLastikJantcap);
-            this.layoutControl3.Controls.Add(this.searchLookUpEditAracLastikMarka);
-            this.layoutControl3.Location = new System.Drawing.Point(90, 173);
-            this.layoutControl3.Name = "layoutControl3";
-            this.layoutControl3.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(545, 230, 650, 400);
-            this.layoutControl3.Root = this.layoutControlGroup2;
-            this.layoutControl3.Size = new System.Drawing.Size(201, 198);
-            this.layoutControl3.TabIndex = 0;
-            this.layoutControl3.Text = "layoutControl2";
-            // 
-            // searchLookUpEditAracLastikMevsim
-            // 
-            this.searchLookUpEditAracLastikMevsim.Location = new System.Drawing.Point(83, 156);
-            this.searchLookUpEditAracLastikMevsim.MenuManager = this.ribbonControl1;
-            this.searchLookUpEditAracLastikMevsim.Name = "searchLookUpEditAracLastikMevsim";
-            this.searchLookUpEditAracLastikMevsim.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEditAracLastikMevsim.Properties.PopupView = this.searchLookUpEdit9View;
-            this.searchLookUpEditAracLastikMevsim.Size = new System.Drawing.Size(106, 20);
-            this.searchLookUpEditAracLastikMevsim.StyleController = this.layoutControl3;
-            this.searchLookUpEditAracLastikMevsim.TabIndex = 10;
-            // 
-            // searchLookUpEdit9View
-            // 
-            this.searchLookUpEdit9View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.searchLookUpEdit9View.Name = "searchLookUpEdit9View";
-            this.searchLookUpEdit9View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.searchLookUpEdit9View.OptionsView.ShowGroupPanel = false;
-            // 
-            // searchLookUpEditAracLastikYuz
-            // 
-            this.searchLookUpEditAracLastikYuz.Location = new System.Drawing.Point(83, 132);
-            this.searchLookUpEditAracLastikYuz.MenuManager = this.ribbonControl1;
-            this.searchLookUpEditAracLastikYuz.Name = "searchLookUpEditAracLastikYuz";
-            this.searchLookUpEditAracLastikYuz.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEditAracLastikYuz.Properties.PopupView = this.searchLookUpEdit8View;
-            this.searchLookUpEditAracLastikYuz.Size = new System.Drawing.Size(106, 20);
-            this.searchLookUpEditAracLastikYuz.StyleController = this.layoutControl3;
-            this.searchLookUpEditAracLastikYuz.TabIndex = 9;
-            // 
-            // searchLookUpEdit8View
-            // 
-            this.searchLookUpEdit8View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.searchLookUpEdit8View.Name = "searchLookUpEdit8View";
-            this.searchLookUpEdit8View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.searchLookUpEdit8View.OptionsView.ShowGroupPanel = false;
-            // 
-            // searchLookUpEditAracLastikHiz
-            // 
-            this.searchLookUpEditAracLastikHiz.Location = new System.Drawing.Point(83, 108);
-            this.searchLookUpEditAracLastikHiz.MenuManager = this.ribbonControl1;
-            this.searchLookUpEditAracLastikHiz.Name = "searchLookUpEditAracLastikHiz";
-            this.searchLookUpEditAracLastikHiz.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEditAracLastikHiz.Properties.PopupView = this.searchLookUpEdit7View;
-            this.searchLookUpEditAracLastikHiz.Size = new System.Drawing.Size(106, 20);
-            this.searchLookUpEditAracLastikHiz.StyleController = this.layoutControl3;
-            this.searchLookUpEditAracLastikHiz.TabIndex = 8;
-            // 
-            // searchLookUpEdit7View
-            // 
-            this.searchLookUpEdit7View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.searchLookUpEdit7View.Name = "searchLookUpEdit7View";
-            this.searchLookUpEdit7View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.searchLookUpEdit7View.OptionsView.ShowGroupPanel = false;
-            // 
-            // searchLookUpEditAracLastikKesit
-            // 
-            this.searchLookUpEditAracLastikKesit.Location = new System.Drawing.Point(83, 84);
-            this.searchLookUpEditAracLastikKesit.Name = "searchLookUpEditAracLastikKesit";
-            this.searchLookUpEditAracLastikKesit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEditAracLastikKesit.Properties.PopupView = this.gridView1;
-            this.searchLookUpEditAracLastikKesit.Size = new System.Drawing.Size(106, 20);
-            this.searchLookUpEditAracLastikKesit.StyleController = this.layoutControl3;
-            this.searchLookUpEditAracLastikKesit.TabIndex = 7;
-            // 
-            // gridView1
-            // 
-            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridView1.OptionsView.ShowGroupPanel = false;
-            // 
-            // searchLookUpEditAracLastikTaban
-            // 
-            this.searchLookUpEditAracLastikTaban.Location = new System.Drawing.Point(83, 60);
-            this.searchLookUpEditAracLastikTaban.Name = "searchLookUpEditAracLastikTaban";
-            this.searchLookUpEditAracLastikTaban.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEditAracLastikTaban.Properties.PopupView = this.gridView2;
-            this.searchLookUpEditAracLastikTaban.Size = new System.Drawing.Size(106, 20);
-            this.searchLookUpEditAracLastikTaban.StyleController = this.layoutControl3;
-            this.searchLookUpEditAracLastikTaban.TabIndex = 6;
-            // 
-            // gridView2
-            // 
-            this.gridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.gridView2.Name = "gridView2";
-            this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridView2.OptionsView.ShowGroupPanel = false;
-            // 
-            // searchLookUpEditAracLastikJantcap
-            // 
-            this.searchLookUpEditAracLastikJantcap.Location = new System.Drawing.Point(83, 36);
-            this.searchLookUpEditAracLastikJantcap.Name = "searchLookUpEditAracLastikJantcap";
-            this.searchLookUpEditAracLastikJantcap.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEditAracLastikJantcap.Properties.PopupView = this.gridView3;
-            this.searchLookUpEditAracLastikJantcap.Size = new System.Drawing.Size(106, 20);
-            this.searchLookUpEditAracLastikJantcap.StyleController = this.layoutControl3;
-            this.searchLookUpEditAracLastikJantcap.TabIndex = 5;
-            // 
-            // gridView3
-            // 
-            this.gridView3.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.gridView3.Name = "gridView3";
-            this.gridView3.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridView3.OptionsView.ShowGroupPanel = false;
-            // 
-            // searchLookUpEditAracLastikMarka
-            // 
-            this.searchLookUpEditAracLastikMarka.Location = new System.Drawing.Point(83, 12);
-            this.searchLookUpEditAracLastikMarka.Name = "searchLookUpEditAracLastikMarka";
-            this.searchLookUpEditAracLastikMarka.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEditAracLastikMarka.Properties.PopupView = this.gridView4;
-            this.searchLookUpEditAracLastikMarka.Size = new System.Drawing.Size(106, 20);
-            this.searchLookUpEditAracLastikMarka.StyleController = this.layoutControl3;
-            this.searchLookUpEditAracLastikMarka.TabIndex = 4;
-            // 
-            // gridView4
-            // 
-            this.gridView4.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.gridView4.Name = "gridView4";
-            this.gridView4.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridView4.OptionsView.ShowGroupPanel = false;
-            // 
-            // layoutControlGroup2
-            // 
-            this.layoutControlGroup2.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup2.GroupBordersVisible = false;
-            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.emptySpaceItem6,
-            this.layoutControlItem10,
-            this.layoutControlItem11,
-            this.layoutControlItem12,
-            this.layoutControlItem13,
-            this.layoutControlItem14,
-            this.layoutControlItem15,
-            this.layoutControlItem16});
-            this.layoutControlGroup2.Name = "Root";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(201, 198);
-            this.layoutControlGroup2.TextVisible = false;
-            // 
-            // emptySpaceItem6
-            // 
-            this.emptySpaceItem6.AllowHotTrack = false;
-            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 168);
-            this.emptySpaceItem6.Name = "emptySpaceItem5";
-            this.emptySpaceItem6.Size = new System.Drawing.Size(181, 10);
-            this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // layoutControlItem10
-            // 
-            this.layoutControlItem10.Control = this.searchLookUpEditAracLastikMarka;
-            this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem10.Name = "layoutControlItem6";
-            this.layoutControlItem10.Size = new System.Drawing.Size(181, 24);
-            this.layoutControlItem10.Text = "Marka";
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(68, 13);
-            // 
-            // layoutControlItem11
-            // 
-            this.layoutControlItem11.Control = this.searchLookUpEditAracLastikJantcap;
-            this.layoutControlItem11.Location = new System.Drawing.Point(0, 24);
-            this.layoutControlItem11.Name = "layoutControlItem7";
-            this.layoutControlItem11.Size = new System.Drawing.Size(181, 24);
-            this.layoutControlItem11.Text = "Jant Çapı";
-            this.layoutControlItem11.TextSize = new System.Drawing.Size(68, 13);
-            // 
-            // layoutControlItem12
-            // 
-            this.layoutControlItem12.Control = this.searchLookUpEditAracLastikTaban;
-            this.layoutControlItem12.Location = new System.Drawing.Point(0, 48);
-            this.layoutControlItem12.Name = "layoutControlItem8";
-            this.layoutControlItem12.Size = new System.Drawing.Size(181, 24);
-            this.layoutControlItem12.Text = "Taban Genişlik";
-            this.layoutControlItem12.TextSize = new System.Drawing.Size(68, 13);
-            // 
-            // layoutControlItem13
-            // 
-            this.layoutControlItem13.Control = this.searchLookUpEditAracLastikKesit;
-            this.layoutControlItem13.Location = new System.Drawing.Point(0, 72);
-            this.layoutControlItem13.Name = "layoutControlItem9";
-            this.layoutControlItem13.Size = new System.Drawing.Size(181, 24);
-            this.layoutControlItem13.Text = "Kesit Oranı";
-            this.layoutControlItem13.TextSize = new System.Drawing.Size(68, 13);
-            // 
-            // layoutControlItem14
-            // 
-            this.layoutControlItem14.Control = this.searchLookUpEditAracLastikHiz;
-            this.layoutControlItem14.Location = new System.Drawing.Point(0, 96);
-            this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.Size = new System.Drawing.Size(181, 24);
-            this.layoutControlItem14.Text = "Hız Kodu";
-            this.layoutControlItem14.TextSize = new System.Drawing.Size(68, 13);
-            // 
-            // layoutControlItem15
-            // 
-            this.layoutControlItem15.Control = this.searchLookUpEditAracLastikYuz;
-            this.layoutControlItem15.Location = new System.Drawing.Point(0, 120);
-            this.layoutControlItem15.Name = "layoutControlItem15";
-            this.layoutControlItem15.Size = new System.Drawing.Size(181, 24);
-            this.layoutControlItem15.Text = "Yüz Endex";
-            this.layoutControlItem15.TextSize = new System.Drawing.Size(68, 13);
-            // 
-            // layoutControlItem16
-            // 
-            this.layoutControlItem16.Control = this.searchLookUpEditAracLastikMevsim;
-            this.layoutControlItem16.Location = new System.Drawing.Point(0, 144);
-            this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(181, 24);
-            this.layoutControlItem16.Text = "Mevsim";
-            this.layoutControlItem16.TextSize = new System.Drawing.Size(68, 13);
+            this.lbl_AracModel.Location = new System.Drawing.Point(58, 108);
+            this.lbl_AracModel.Name = "lbl_AracModel";
+            this.lbl_AracModel.Size = new System.Drawing.Size(63, 13);
+            this.lbl_AracModel.TabIndex = 9;
+            this.lbl_AracModel.Text = "labelControl5";
             // 
             // comboBoxEdit_aracArac
             // 
-            this.comboBoxEdit_aracArac.Location = new System.Drawing.Point(90, 30);
+            this.comboBoxEdit_aracArac.Location = new System.Drawing.Point(57, 37);
             this.comboBoxEdit_aracArac.MenuManager = this.ribbonControl1;
             this.comboBoxEdit_aracArac.Name = "comboBoxEdit_aracArac";
             this.comboBoxEdit_aracArac.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -922,9 +636,38 @@
             this.comboBoxEdit_aracArac.TabIndex = 11;
             this.comboBoxEdit_aracArac.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_aracArac_SelectedIndexChanged);
             // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(16, 108);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(34, 13);
+            this.labelControl4.TabIndex = 8;
+            this.labelControl4.Text = "Model";
+            // 
+            // comboBoxEdit_aracPlaka
+            // 
+            this.comboBoxEdit_aracPlaka.Location = new System.Drawing.Point(57, 153);
+            this.comboBoxEdit_aracPlaka.Name = "comboBoxEdit_aracPlaka";
+            this.comboBoxEdit_aracPlaka.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit_aracPlaka.Size = new System.Drawing.Size(92, 20);
+            this.comboBoxEdit_aracPlaka.TabIndex = 10;
+            // 
+            // labelControl16
+            // 
+            this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl16.Appearance.Options.UseFont = true;
+            this.labelControl16.Location = new System.Drawing.Point(16, 156);
+            this.labelControl16.Name = "labelControl16";
+            this.labelControl16.Size = new System.Drawing.Size(31, 13);
+            this.labelControl16.TabIndex = 8;
+            this.labelControl16.Text = "Plaka";
+            // 
             // comboBoxEdit_AracYil
             // 
-            this.comboBoxEdit_AracYil.Location = new System.Drawing.Point(90, 120);
+            this.comboBoxEdit_AracYil.Location = new System.Drawing.Point(57, 127);
             this.comboBoxEdit_AracYil.MenuManager = this.ribbonControl1;
             this.comboBoxEdit_AracYil.Name = "comboBoxEdit_AracYil";
             this.comboBoxEdit_AracYil.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -932,10 +675,20 @@
             this.comboBoxEdit_AracYil.Size = new System.Drawing.Size(92, 20);
             this.comboBoxEdit_AracYil.TabIndex = 10;
             // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Location = new System.Drawing.Point(16, 130);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(13, 13);
+            this.labelControl6.TabIndex = 8;
+            this.labelControl6.Text = "Yıl";
+            // 
             // searchLookUpEditAracMarka
             // 
             this.searchLookUpEditAracMarka.EditValue = "[EditValue is null";
-            this.searchLookUpEditAracMarka.Location = new System.Drawing.Point(90, 56);
+            this.searchLookUpEditAracMarka.Location = new System.Drawing.Point(57, 63);
             this.searchLookUpEditAracMarka.MenuManager = this.ribbonControl1;
             this.searchLookUpEditAracMarka.Name = "searchLookUpEditAracMarka";
             this.searchLookUpEditAracMarka.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1005,68 +758,236 @@
             this.gridColumn4.FieldName = "id";
             this.gridColumn4.Name = "gridColumn4";
             // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(49, 33);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(26, 13);
-            this.labelControl5.TabIndex = 8;
-            this.labelControl5.Text = "Araç";
-            // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(49, 59);
+            this.labelControl3.Location = new System.Drawing.Point(16, 66);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(36, 13);
             this.labelControl3.TabIndex = 8;
             this.labelControl3.Text = "Marka";
             // 
-            // labelControl4
+            // groupControl2
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(49, 101);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(34, 13);
-            this.labelControl4.TabIndex = 8;
-            this.labelControl4.Text = "Model";
+            this.groupControl2.Controls.Add(this.comboBoxEdit_lastikKonumKisim);
+            this.groupControl2.Controls.Add(this.labelControl15);
+            this.groupControl2.Controls.Add(this.comboBoxEdit_lastikKonumBolum);
+            this.groupControl2.Controls.Add(this.labelControl14);
+            this.groupControl2.Location = new System.Drawing.Point(501, 18);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(142, 105);
+            this.groupControl2.TabIndex = 12;
+            this.groupControl2.Text = "Konum Bilgileri";
             // 
-            // lbl_AracModel
+            // comboBoxEdit_lastikKonumKisim
             // 
-            this.lbl_AracModel.Location = new System.Drawing.Point(91, 101);
-            this.lbl_AracModel.Name = "lbl_AracModel";
-            this.lbl_AracModel.Size = new System.Drawing.Size(63, 13);
-            this.lbl_AracModel.TabIndex = 9;
-            this.lbl_AracModel.Text = "labelControl5";
+            this.comboBoxEdit_lastikKonumKisim.Location = new System.Drawing.Point(53, 64);
+            this.comboBoxEdit_lastikKonumKisim.Name = "comboBoxEdit_lastikKonumKisim";
+            this.comboBoxEdit_lastikKonumKisim.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit_lastikKonumKisim.Size = new System.Drawing.Size(76, 20);
+            this.comboBoxEdit_lastikKonumKisim.TabIndex = 11;
+            this.comboBoxEdit_lastikKonumKisim.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_aracArac_SelectedIndexChanged);
             // 
-            // labelControl2
+            // labelControl15
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(49, 82);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(22, 13);
-            this.labelControl2.TabIndex = 6;
-            this.labelControl2.Text = "Seri";
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl15.Appearance.Options.UseFont = true;
+            this.labelControl15.Location = new System.Drawing.Point(11, 67);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(30, 13);
+            this.labelControl15.TabIndex = 8;
+            this.labelControl15.Text = "Kısım";
             // 
-            // lbl_aracSeri
+            // comboBoxEdit_lastikKonumBolum
             // 
-            this.lbl_aracSeri.Location = new System.Drawing.Point(90, 82);
-            this.lbl_aracSeri.Name = "lbl_aracSeri";
-            this.lbl_aracSeri.Size = new System.Drawing.Size(63, 13);
-            this.lbl_aracSeri.TabIndex = 7;
-            this.lbl_aracSeri.Text = "labelControl3";
+            this.comboBoxEdit_lastikKonumBolum.Location = new System.Drawing.Point(53, 38);
+            this.comboBoxEdit_lastikKonumBolum.Name = "comboBoxEdit_lastikKonumBolum";
+            this.comboBoxEdit_lastikKonumBolum.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit_lastikKonumBolum.Size = new System.Drawing.Size(76, 20);
+            this.comboBoxEdit_lastikKonumBolum.TabIndex = 11;
+            this.comboBoxEdit_lastikKonumBolum.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_aracArac_SelectedIndexChanged);
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl14.Appearance.Options.UseFont = true;
+            this.labelControl14.Location = new System.Drawing.Point(11, 41);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(35, 13);
+            this.labelControl14.TabIndex = 8;
+            this.labelControl14.Text = "Bölüm";
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.comboBoxEdit_lastikMevsim);
+            this.groupControl1.Controls.Add(this.labelControl13);
+            this.groupControl1.Controls.Add(this.comboBoxEdit_lastikYuzEndeks);
+            this.groupControl1.Controls.Add(this.labelControl12);
+            this.groupControl1.Controls.Add(this.comboBoxEdit_lastikHizKodu);
+            this.groupControl1.Controls.Add(this.labelControl11);
+            this.groupControl1.Controls.Add(this.comboBoxEdit_lastikKesitOrani);
+            this.groupControl1.Controls.Add(this.labelControl10);
+            this.groupControl1.Controls.Add(this.comboBoxEdit_lastikTabanGenislik);
+            this.groupControl1.Controls.Add(this.labelControl9);
+            this.groupControl1.Controls.Add(this.comboBoxEdit_lastikJantcap);
+            this.groupControl1.Controls.Add(this.labelControl8);
+            this.groupControl1.Controls.Add(this.comboBoxEdit_lastikMarka);
+            this.groupControl1.Controls.Add(this.labelControl7);
+            this.groupControl1.Location = new System.Drawing.Point(250, 18);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(245, 227);
+            this.groupControl1.TabIndex = 12;
+            this.groupControl1.Text = "Lastik Bilgileri";
+            // 
+            // comboBoxEdit_lastikMevsim
+            // 
+            this.comboBoxEdit_lastikMevsim.Location = new System.Drawing.Point(119, 189);
+            this.comboBoxEdit_lastikMevsim.Name = "comboBoxEdit_lastikMevsim";
+            this.comboBoxEdit_lastikMevsim.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit_lastikMevsim.Size = new System.Drawing.Size(106, 20);
+            this.comboBoxEdit_lastikMevsim.TabIndex = 11;
+            this.comboBoxEdit_lastikMevsim.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_aracArac_SelectedIndexChanged);
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl13.Appearance.Options.UseFont = true;
+            this.labelControl13.Location = new System.Drawing.Point(14, 192);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(44, 13);
+            this.labelControl13.TabIndex = 8;
+            this.labelControl13.Text = "Mevsim";
+            // 
+            // comboBoxEdit_lastikYuzEndeks
+            // 
+            this.comboBoxEdit_lastikYuzEndeks.Location = new System.Drawing.Point(119, 163);
+            this.comboBoxEdit_lastikYuzEndeks.Name = "comboBoxEdit_lastikYuzEndeks";
+            this.comboBoxEdit_lastikYuzEndeks.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit_lastikYuzEndeks.Size = new System.Drawing.Size(106, 20);
+            this.comboBoxEdit_lastikYuzEndeks.TabIndex = 11;
+            this.comboBoxEdit_lastikYuzEndeks.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_aracArac_SelectedIndexChanged);
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Location = new System.Drawing.Point(14, 166);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(66, 13);
+            this.labelControl12.TabIndex = 8;
+            this.labelControl12.Text = "Yüz Endeksi";
+            // 
+            // comboBoxEdit_lastikHizKodu
+            // 
+            this.comboBoxEdit_lastikHizKodu.Location = new System.Drawing.Point(119, 137);
+            this.comboBoxEdit_lastikHizKodu.Name = "comboBoxEdit_lastikHizKodu";
+            this.comboBoxEdit_lastikHizKodu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit_lastikHizKodu.Size = new System.Drawing.Size(106, 20);
+            this.comboBoxEdit_lastikHizKodu.TabIndex = 11;
+            this.comboBoxEdit_lastikHizKodu.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_aracArac_SelectedIndexChanged);
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Location = new System.Drawing.Point(14, 140);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(48, 13);
+            this.labelControl11.TabIndex = 8;
+            this.labelControl11.Text = "Hız Kodu";
+            // 
+            // comboBoxEdit_lastikKesitOrani
+            // 
+            this.comboBoxEdit_lastikKesitOrani.Location = new System.Drawing.Point(119, 111);
+            this.comboBoxEdit_lastikKesitOrani.Name = "comboBoxEdit_lastikKesitOrani";
+            this.comboBoxEdit_lastikKesitOrani.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit_lastikKesitOrani.Size = new System.Drawing.Size(106, 20);
+            this.comboBoxEdit_lastikKesitOrani.TabIndex = 11;
+            this.comboBoxEdit_lastikKesitOrani.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_aracArac_SelectedIndexChanged);
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Location = new System.Drawing.Point(14, 114);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(61, 13);
+            this.labelControl10.TabIndex = 8;
+            this.labelControl10.Text = "Kesit Oranı";
+            // 
+            // comboBoxEdit_lastikTabanGenislik
+            // 
+            this.comboBoxEdit_lastikTabanGenislik.Location = new System.Drawing.Point(119, 85);
+            this.comboBoxEdit_lastikTabanGenislik.Name = "comboBoxEdit_lastikTabanGenislik";
+            this.comboBoxEdit_lastikTabanGenislik.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit_lastikTabanGenislik.Size = new System.Drawing.Size(106, 20);
+            this.comboBoxEdit_lastikTabanGenislik.TabIndex = 11;
+            this.comboBoxEdit_lastikTabanGenislik.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_aracArac_SelectedIndexChanged);
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Location = new System.Drawing.Point(14, 88);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(85, 13);
+            this.labelControl9.TabIndex = 8;
+            this.labelControl9.Text = "Taban Genişliği";
+            // 
+            // comboBoxEdit_lastikJantcap
+            // 
+            this.comboBoxEdit_lastikJantcap.Location = new System.Drawing.Point(119, 59);
+            this.comboBoxEdit_lastikJantcap.Name = "comboBoxEdit_lastikJantcap";
+            this.comboBoxEdit_lastikJantcap.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit_lastikJantcap.Size = new System.Drawing.Size(106, 20);
+            this.comboBoxEdit_lastikJantcap.TabIndex = 11;
+            this.comboBoxEdit_lastikJantcap.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_aracArac_SelectedIndexChanged);
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Location = new System.Drawing.Point(14, 62);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(52, 13);
+            this.labelControl8.TabIndex = 8;
+            this.labelControl8.Text = "Jant Çapı";
+            // 
+            // comboBoxEdit_lastikMarka
+            // 
+            this.comboBoxEdit_lastikMarka.Location = new System.Drawing.Point(119, 33);
+            this.comboBoxEdit_lastikMarka.Name = "comboBoxEdit_lastikMarka";
+            this.comboBoxEdit_lastikMarka.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit_lastikMarka.Size = new System.Drawing.Size(106, 20);
+            this.comboBoxEdit_lastikMarka.TabIndex = 11;
+            this.comboBoxEdit_lastikMarka.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_aracArac_SelectedIndexChanged);
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Location = new System.Drawing.Point(14, 36);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(36, 13);
+            this.labelControl7.TabIndex = 8;
+            this.labelControl7.Text = "Marka";
             // 
             // xtraTabPage4
             // 
             this.xtraTabPage4.Controls.Add(this.layoutControl5);
             this.xtraTabPage4.Controls.Add(this.layoutControl4);
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(515, 501);
+            this.xtraTabPage4.Size = new System.Drawing.Size(716, 270);
             this.xtraTabPage4.Text = "Arac 2";
             // 
             // layoutControl5
@@ -1443,21 +1364,11 @@
             this.layoutControlItem20.Text = "Model";
             this.layoutControlItem20.TextSize = new System.Drawing.Size(29, 13);
             // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(49, 123);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(13, 13);
-            this.labelControl6.TabIndex = 8;
-            this.labelControl6.Text = "Yıl";
-            // 
             // frm_ms_yenimüşteri_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1140, 721);
+            this.ClientSize = new System.Drawing.Size(717, 444);
             this.Controls.Add(this.ribbonControl1);
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.groupControl_yenimüşteri);
@@ -1479,15 +1390,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl_yenimüşteri)).EndInit();
             this.groupControl_yenimüşteri.ResumeLayout(false);
             this.groupControl_yenimüşteri.PerformLayout();
@@ -1498,44 +1410,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).EndInit();
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage3.ResumeLayout(false);
-            this.xtraTabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl6)).EndInit();
-            this.layoutControl6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditAracLastikKisim.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditAracLastikBolum.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).EndInit();
-            this.layoutControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikMevsim.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit9View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikYuz.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit8View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikHiz.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit7View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikKesit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikTaban.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikJantcap.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracLastikMarka.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            this.groupControl3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_aracArac.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_aracPlaka.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_AracYil.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditAracMarka.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditGrid_AracMarka)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikKonumKisim.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikKonumBolum.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikMevsim.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikYuzEndeks.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikHizKodu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikKesitOrani.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikTabanGenislik.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikJantcap.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_lastikMarka.Properties)).EndInit();
             this.xtraTabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl5)).EndInit();
             this.layoutControl5.ResumeLayout(false);
@@ -1592,11 +1489,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
-        public DevExpress.XtraEditors.SimpleButton btn_kaydet;
         public DevExpress.XtraEditors.LabelControl labelControl1;
         public DevExpress.XtraEditors.TextEdit txt_telefon;
         public DevExpress.XtraEditors.TextEdit txt_adsoyad;
@@ -1621,30 +1515,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem28;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem9;
-        private DevExpress.XtraLayout.LayoutControl layoutControl3;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEditAracLastikMevsim;
-        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit9View;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEditAracLastikYuz;
-        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit8View;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEditAracLastikHiz;
-        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit7View;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEditAracLastikKesit;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEditAracLastikTaban;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEditAracLastikJantcap;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEditAracLastikMarka;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
         private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEditAracMarka;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEditGrid_AraacMarka;
         private DevExpress.XtraLayout.LayoutControl layoutControl5;
@@ -1686,13 +1556,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem18;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
-        private DevExpress.XtraLayout.LayoutControl layoutControl6;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEditAracLastikKisim;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEditAracLastikBolum;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem29;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem10;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem30;
         private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
@@ -1709,5 +1572,31 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem5;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_lastikKonumKisim;
+        private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_lastikKonumBolum;
+        private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_lastikMevsim;
+        private DevExpress.XtraEditors.LabelControl labelControl13;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_lastikYuzEndeks;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_lastikHizKodu;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_lastikKesitOrani;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_lastikTabanGenislik;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_lastikJantcap;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_lastikMarka;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_aracPlaka;
+        private DevExpress.XtraEditors.LabelControl labelControl16;
     }
 }

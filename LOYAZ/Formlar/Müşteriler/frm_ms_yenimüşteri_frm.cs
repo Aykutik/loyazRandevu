@@ -32,110 +32,110 @@ namespace LOYAZ
 
         private void btn_kaydet_Click(object sender, EventArgs e)
         {
-            splashScreenManager2.ShowWaitForm();
-            if (btn_kaydet.Text=="GÜNCELLE")
-            {
+            //splashScreenManager2.ShowWaitForm();
+            //if (btn_kaydet.Text=="GÜNCELLE")
+            //{
 
-                var frm = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
-                if (frm != null)
-                    frm.gridcontrolgöster();
+            //    var frm = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
+            //    if (frm != null)
+            //        frm.gridcontrolgöster();
 
-                MySqlCommand komut = new MySqlCommand("update musteri set adsoyad = @adsoyad, telefon = @telefon, eposta=@eposta, adres = @adres where id = @id", blg.bağlantı());
-                komut.Parameters.Clear();
-                komut.Parameters.AddWithValue("@id", frm.lbl_id.Text);
-                komut.Parameters.AddWithValue("@adsoyad", txt_adsoyad.Text);
-                komut.Parameters.AddWithValue("@telefon", txt_telefon.Text);
-                komut.Parameters.AddWithValue("@eposta", txt_eposta.Text);
-                komut.Parameters.AddWithValue("@adres", txt_adres.Text);
-                komut.ExecuteNonQuery();
+            //    MySqlCommand komut = new MySqlCommand("update musteri set adsoyad = @adsoyad, telefon = @telefon, eposta=@eposta, adres = @adres where id = @id", blg.bağlantı());
+            //    komut.Parameters.Clear();
+            //    komut.Parameters.AddWithValue("@id", frm.lbl_id.Text);
+            //    komut.Parameters.AddWithValue("@adsoyad", txt_adsoyad.Text);
+            //    komut.Parameters.AddWithValue("@telefon", txt_telefon.Text);
+            //    komut.Parameters.AddWithValue("@eposta", txt_eposta.Text);
+            //    komut.Parameters.AddWithValue("@adres", txt_adres.Text);
+            //    komut.ExecuteNonQuery();
 
-                var frm3 = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
-                if (frm3 != null)
-                    frm3.gridcontrolgöster();
+            //    var frm3 = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
+            //    if (frm3 != null)
+            //        frm3.gridcontrolgöster();
 
-                MessageBox.Show("" + txt_adsoyad.Text + " isimli müşteri " + Environment.NewLine + "başarıyla güncellenmiştir.", "GÜNCELLEME BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-            }
-            if (btn_kaydet.Text=="Kaydet"&& neredenGelen=="yeni")
-            {
-                if (labelControl1.Text != txt_telefon.Text)
-                {
+            //    MessageBox.Show("" + txt_adsoyad.Text + " isimli müşteri " + Environment.NewLine + "başarıyla güncellenmiştir.", "GÜNCELLEME BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    this.Close();
+            //}
+            //if (btn_kaydet.Text=="Kaydet"&& neredenGelen=="yeni")
+            //{
+            //    if (labelControl1.Text != txt_telefon.Text)
+            //    {
 
-                    MySqlCommand komut = new MySqlCommand("insert into musteri(adsoyad,telefon,eposta,adres) values(@adsoyad,@telefon,@eposta,@adres)", blg.bağlantı());
-                    komut.Parameters.Clear();
-                    komut.Parameters.AddWithValue("@adsoyad", txt_adsoyad.Text);
-                    komut.Parameters.AddWithValue("@telefon", txt_telefon.Text);
-                    komut.Parameters.AddWithValue("@eposta", txt_eposta.Text);
-                    komut.Parameters.AddWithValue("@adres", txt_adres.Text);
+            //        MySqlCommand komut = new MySqlCommand("insert into musteri(adsoyad,telefon,eposta,adres) values(@adsoyad,@telefon,@eposta,@adres)", blg.bağlantı());
+            //        komut.Parameters.Clear();
+            //        komut.Parameters.AddWithValue("@adsoyad", txt_adsoyad.Text);
+            //        komut.Parameters.AddWithValue("@telefon", txt_telefon.Text);
+            //        komut.Parameters.AddWithValue("@eposta", txt_eposta.Text);
+            //        komut.Parameters.AddWithValue("@adres", txt_adres.Text);
                     
-                    komut.ExecuteNonQuery();
+            //        komut.ExecuteNonQuery();
                     
 
-                    var frm = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
-                    if (frm != null)
-                        frm.gridcontrolgöster();
+            //        var frm = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
+            //        if (frm != null)
+            //            frm.gridcontrolgöster();
 
-                    var frm_yeni3 = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
-                    if (frm_yeni3 != null)
-                        frm_yeni3.gridcontrolgöster();
+            //        var frm_yeni3 = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
+            //        if (frm_yeni3 != null)
+            //            frm_yeni3.gridcontrolgöster();
 
-                    MessageBox.Show("" + txt_adsoyad.Text + " isimli müşteri " + Environment.NewLine + "başarıyla kaydedilmiştir.", "KAYIT BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("" + txt_telefon.Text.Trim(new char[] { '(', ')' }) + " Bu numaraya sahip bir kayıt bulunmaktadır." + Environment.NewLine + "" + Environment.NewLine + " kayda devam edilemiyor!", "KAYIT BAŞARISIZ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            if (btn_kaydet.Text == "Kaydet" && neredenGelen == "servisden")
-            {
-                if (labelControl1.Text != txt_telefon.Text)
-                {
-                    string musteriIdAktar = "";
-                    MySqlCommand komut = new MySqlCommand("insert into musteri(adsoyad,telefon,eposta,adres) values(@adsoyad,@telefon,@eposta,@adres)", blg.bağlantı());
-                    komut.Parameters.Clear();
-                    komut.Parameters.AddWithValue("@adsoyad", txt_adsoyad.Text);
-                    komut.Parameters.AddWithValue("@telefon", txt_telefon.Text);
-                    komut.Parameters.AddWithValue("@eposta", txt_eposta.Text);
-                    komut.Parameters.AddWithValue("@adres", txt_adres.Text);
-                    komut.ExecuteNonQuery();
+            //        MessageBox.Show("" + txt_adsoyad.Text + " isimli müşteri " + Environment.NewLine + "başarıyla kaydedilmiştir.", "KAYIT BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //        this.Close();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("" + txt_telefon.Text.Trim(new char[] { '(', ')' }) + " Bu numaraya sahip bir kayıt bulunmaktadır." + Environment.NewLine + "" + Environment.NewLine + " kayda devam edilemiyor!", "KAYIT BAŞARISIZ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
+            //}
+            //if (btn_kaydet.Text == "Kaydet" && neredenGelen == "servisden")
+            //{
+            //    if (labelControl1.Text != txt_telefon.Text)
+            //    {
+            //        string musteriIdAktar = "";
+            //        MySqlCommand komut = new MySqlCommand("insert into musteri(adsoyad,telefon,eposta,adres) values(@adsoyad,@telefon,@eposta,@adres)", blg.bağlantı());
+            //        komut.Parameters.Clear();
+            //        komut.Parameters.AddWithValue("@adsoyad", txt_adsoyad.Text);
+            //        komut.Parameters.AddWithValue("@telefon", txt_telefon.Text);
+            //        komut.Parameters.AddWithValue("@eposta", txt_eposta.Text);
+            //        komut.Parameters.AddWithValue("@adres", txt_adres.Text);
+            //        komut.ExecuteNonQuery();
 
-                    //kaydedilenin müşterinin id sini öğren
-                    MySqlCommand servisno = new MySqlCommand("select *from musteri where adsoyad=@adsoyad and telefon=@telefon", blg.bağlantı());
-                    servisno.Parameters.Clear();
-                    servisno.Parameters.AddWithValue("@adsoyad", txt_adsoyad.Text.Trim());
-                    servisno.Parameters.AddWithValue("@telefon", txt_telefon.Text.Trim());
-                    servisno.ExecuteNonQuery();
-                    MySqlDataReader oku = servisno.ExecuteReader();
-                    while (oku.Read())
-                    {
-                        musteriIdAktar = oku["id"].ToString();
-                    }
+            //        //kaydedilenin müşterinin id sini öğren
+            //        MySqlCommand servisno = new MySqlCommand("select *from musteri where adsoyad=@adsoyad and telefon=@telefon", blg.bağlantı());
+            //        servisno.Parameters.Clear();
+            //        servisno.Parameters.AddWithValue("@adsoyad", txt_adsoyad.Text.Trim());
+            //        servisno.Parameters.AddWithValue("@telefon", txt_telefon.Text.Trim());
+            //        servisno.ExecuteNonQuery();
+            //        MySqlDataReader oku = servisno.ExecuteReader();
+            //        while (oku.Read())
+            //        {
+            //            musteriIdAktar = oku["id"].ToString();
+            //        }
 
-                    frm_ts_yeniservis_frm yeni = (frm_ts_yeniservis_frm)Application.OpenForms["frm_ts_yeniservis_frm"];
-                    yeni.txt_müşteriadsoyad.Properties.NullValuePrompt = txt_adsoyad.Text;
-                    yeni.adsoyadBilgi = "yeni oluşturuldu";
-                    yeni.yeniMusteriId = musteriIdAktar;
+            //        frm_ts_yeniservis_frm yeni = (frm_ts_yeniservis_frm)Application.OpenForms["frm_ts_yeniservis_frm"];
+            //        yeni.txt_müşteriadsoyad.Properties.NullValuePrompt = txt_adsoyad.Text;
+            //        yeni.adsoyadBilgi = "yeni oluşturuldu";
+            //        yeni.yeniMusteriId = musteriIdAktar;
 
-                    var frm_yeni = (frm_ts_yeniservis_frm)Application.OpenForms["frm_ts_yeniservis_frm"];
-                    if (frm_yeni != null)
-                    frm_yeni.gridcontrolgöster();
-
-
-                    var frm_yeni3 = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
-                    if (frm_yeni3 != null)
-                        frm_yeni3.gridcontrolgöster();
+            //        var frm_yeni = (frm_ts_yeniservis_frm)Application.OpenForms["frm_ts_yeniservis_frm"];
+            //        if (frm_yeni != null)
+            //        frm_yeni.gridcontrolgöster();
 
 
-                    MessageBox.Show("" + txt_adsoyad.Text + " isimli müşteri " + Environment.NewLine + "başarıyla kaydedilmiştir.", "KAYIT BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("" + txt_telefon.Text.Trim(new char[] { '(', ')' }) + " Bu numaraya sahip bir kayıt bulunmaktadır." + Environment.NewLine + "" + Environment.NewLine + " kayda devam edilemiyor!", "KAYIT BAŞARISIZ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            splashScreenManager2.CloseWaitForm();
+            //        var frm_yeni3 = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
+            //        if (frm_yeni3 != null)
+            //            frm_yeni3.gridcontrolgöster();
+
+
+            //        MessageBox.Show("" + txt_adsoyad.Text + " isimli müşteri " + Environment.NewLine + "başarıyla kaydedilmiştir.", "KAYIT BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //        this.Close();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("" + txt_telefon.Text.Trim(new char[] { '(', ')' }) + " Bu numaraya sahip bir kayıt bulunmaktadır." + Environment.NewLine + "" + Environment.NewLine + " kayda devam edilemiyor!", "KAYIT BAŞARISIZ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    }
+            //}
+            //splashScreenManager2.CloseWaitForm();
         }
 
         private void txt_iletişim_MouseLeave(object sender, EventArgs e)
