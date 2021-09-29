@@ -231,6 +231,7 @@ namespace LOYAZ
         {
             frm_ms_yenimüşteri_frm frm = new frm_ms_yenimüşteri_frm();
             frm.Show();
+            frm.neredenGelen = "yeni";
         }
 
         private void btn_müş_sil_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
