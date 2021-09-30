@@ -113,11 +113,6 @@ namespace LOYAZ
             //splashScreenManager2.CloseWaitForm();
         }
 
-        private void txt_iletişim_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_iletişim_Leave(object sender, EventArgs e)
         {
             MySqlCommand komut = new MySqlCommand("select *from musteri where telefon=@tel", _blg.bağlantı());
@@ -136,13 +131,24 @@ namespace LOYAZ
             }
         }
 
+        #region  COMBO
+        private void searchLookUpEditAracMarka_EditValueChanged(object sender, EventArgs e)
+        {
+
+            comboBoxEdit_lastikMarka.Enabled = true;
+            lbl_aracSeri.Enabled = true;
+            lbl_AracModel.Enabled = true;
+            comboBoxEdit_AracYil.Enabled = true;
+            txt_aracPlaka.Enabled = true;
+
+
+        }
 
         #region COMBOLARI YÜKLE
 
         private void CombolariYükle()
         {
-
-            //Arac bilgileri getir
+            // Arac bilgileri
             var komut = new MySqlCommand("select distinct arac from tanim_arac", _blg.bağlantı());
             komut.ExecuteNonQuery();
             var oku = komut.ExecuteReader();
@@ -159,99 +165,86 @@ namespace LOYAZ
             comboBoxEdit_aracArac.Text = "Otomobil";
             oku.Close();
 
-            //lastik bilgileri
-            //marka bilgilerini yükle
-            var komutMarka = new MySqlCommand("select distinct marka from tanim_lastik", _blg.bağlantı());
-            komutMarka.ExecuteNonQuery();
-            var okuMarka = komutMarka.ExecuteReader();
-            comboBoxEdit_lastikMarka.Properties.Items.Clear();
+            // Lastik bilgilerini sayfa açılınca yüklenecek,
+            // lastik marka ya tıklanınca diğer bilgiler de yüklenecek
+            var komutLastik = new MySqlCommand("select distinct marka from tanim_lastik", _blg.bağlantı());
+            komutLastik.ExecuteNonQuery();
+            var okuLastik = komutLastik.ExecuteReader();
 
-            while (okuMarka.Read())
+            while (okuLastik.Read())
             {
-                comboBoxEdit_lastikMarka.Properties.Items.Add(okuMarka["marka"]);
+                var marka = okuLastik["marka"].ToString();
+                if (marka == "") continue;
+                comboBoxEdit_lastikMarka.Properties.Items.Add(marka);
             }
-            okuMarka.Close();
-            //jantçap bilgilerini yükle
-            var komutJant = new MySqlCommand("select distinct jantcap from tanim_lastik", _blg.bağlantı());
-            komutJant.ExecuteNonQuery();
-            var okuJant = komutJant.ExecuteReader();
-            comboBoxEdit_lastikJantcap.Properties.Items.Clear();
-            while (okuJant.Read())
+            okuLastik.Close();
+
+        }
+
+
+        private void comboBoxEdit_lastikMarka_EditValueChanged(object sender, EventArgs e)
+        {
+            comboBoxEdit_lastikJantcap.Enabled = true;
+            comboBoxEdit_lastikTabanGenislik.Enabled = true;
+            comboBoxEdit_lastikKesitOrani.Enabled = true;
+            comboBoxEdit_lastikHizKodu.Enabled = true;
+            comboBoxEdit_lastikYuzEndeks.Enabled = true;
+            comboBoxEdit_lastikMevsim.Enabled = true;
+            comboBoxEdit_lastikKonumBolum.Enabled = true;
+            comboBoxEdit_lastikKonumKisim.Enabled = true;
+
+            //lastik markaya tıklanınca diğer bilgiler geliyor...
+            var komutLastik = new MySqlCommand("select distinct jantcap,tabangenislik,kesitorani,hizkodu,yuzendeks,mevsim from tanim_lastik", _blg.bağlantı());
+            komutLastik.ExecuteNonQuery();
+            var okuLastik = komutLastik.ExecuteReader();
+            while (okuLastik.Read())
             {
-                comboBoxEdit_lastikJantcap.Properties.Items.Add(okuJant["jantcap"]);
+                var jantcap = okuLastik["jantcap"].ToString();
+                var tabangenislik = okuLastik["tabangenislik"].ToString();
+                var kesitorani = okuLastik["kesitorani"].ToString();
+                var hizkodu = okuLastik["hizkodu"].ToString();
+                var yuzendeks = okuLastik["yuzendeks"].ToString();
+                var mevsim = okuLastik["mevsim"].ToString();
+
+
+                if (jantcap != "")
+                {
+                    comboBoxEdit_lastikJantcap.Properties.Items.Add(jantcap);
+
+                }
+                if (tabangenislik != "")
+                {
+                    comboBoxEdit_lastikTabanGenislik.Properties.Items.Add(tabangenislik);
+
+                }
+                if (kesitorani != "")
+                {
+                    comboBoxEdit_lastikKesitOrani.Properties.Items.Add(kesitorani);
+
+                }
+                if (hizkodu != "")
+                {
+                    comboBoxEdit_lastikHizKodu.Properties.Items.Add(hizkodu);
+
+                }
+                if (yuzendeks != "")
+                {
+                    comboBoxEdit_lastikYuzEndeks.Properties.Items.Add(yuzendeks);
+
+                }
+                if (mevsim != "")
+                {
+                    comboBoxEdit_lastikMevsim.Properties.Items.Add(mevsim);
+
+                }
             }
-            okuJant.Close();
-            //Taban Genişlik bilgilerini yükle
-            var komuttaban = new MySqlCommand("select distinct tabangenislik from tanim_lastik", _blg.bağlantı());
-            komuttaban.ExecuteNonQuery();
-            var okuTaban = komuttaban.ExecuteReader();
-            comboBoxEdit_lastikTabanGenislik.Properties.Items.Clear();
-            while (okuTaban.Read())
-            {
-                comboBoxEdit_lastikTabanGenislik.Properties.Items.Add(okuTaban["tabangenislik"]);
-            }
-            okuTaban.Close();
-            //Taban Genişlik bilgilerini yükle
-            var komutkesitorani = new MySqlCommand("select distinct kesitorani from tanim_lastik", _blg.bağlantı());
-            komutkesitorani.ExecuteNonQuery();
-            var okukesitorani = komutkesitorani.ExecuteReader();
-            comboBoxEdit_lastikKesitOrani.Properties.Items.Clear();
-            while (okukesitorani.Read())
-            {
-                comboBoxEdit_lastikKesitOrani.Properties.Items.Add(okukesitorani["kesitorani"]);
-            }
-            okukesitorani.Close();
-            //Taban Genişlik bilgilerini yükle
-            var komutHizkodu = new MySqlCommand("select distinct hizkodu from tanim_lastik", _blg.bağlantı());
-            komutHizkodu.ExecuteNonQuery();
-            var okuHizkodu = komutHizkodu.ExecuteReader();
-            comboBoxEdit_lastikHizKodu.Properties.Items.Clear();
-            while (okuHizkodu.Read())
-            {
-                comboBoxEdit_lastikHizKodu.Properties.Items.Add(okuHizkodu["hizkodu"]);
-            }
-            okuHizkodu.Close();
-            //Taban Genişlik bilgilerini yükle
-            var komutyuzendeks = new MySqlCommand("select distinct yuzendeks from tanim_lastik", _blg.bağlantı());
-            komutyuzendeks.ExecuteNonQuery();
-            var okuyuzendeks = komutyuzendeks.ExecuteReader();
-            comboBoxEdit_lastikYuzEndeks.Properties.Items.Clear();
-            while (okuyuzendeks.Read())
-            {
-                comboBoxEdit_lastikYuzEndeks.Properties.Items.Add(okuyuzendeks["yuzendeks"]);
-            }
-            okuyuzendeks.Close();
-            //Taban Genişlik bilgilerini yükle
-            var komutMevsim = new MySqlCommand("select distinct mevsim from tanim_lastik", _blg.bağlantı());
-            komutMevsim.ExecuteNonQuery();
-            var okuMevsim = komutMevsim.ExecuteReader();
-            comboBoxEdit_lastikMevsim.Properties.Items.Clear();
-            while (okuMevsim.Read())
-            {
-                comboBoxEdit_lastikMevsim.Properties.Items.Add(okuMevsim["mevsim"]);
-            }
-            okuMevsim.Close();
+            okuLastik.Close();
         }
 
         #endregion
 
-        private void searchLookUpEdit_aracArac_EditValueChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                //MySqlDataAdapter adp = new MySqlDataAdapter("select *from tanim_arac", blg.bağlantı());
-                //DataTable ds = new DataTable();
-                //adp.Fill(ds);
-                //bindingSource1.DataSource = ds;
-                //bindingSource1.Filter = "arac ='" + searchLookUpEdit_aracArac.Text + "'";
-                //searchLookUpEditAracMarka.Properties.DataSource = bindingSource1;
-            }
-            catch (Exception)
-            {
+        #endregion
 
-            }
-        }
-        
         private void searchLookUpEditGrid_AracMarka_Click(object sender, EventArgs e)
         {
             try
@@ -275,7 +268,7 @@ namespace LOYAZ
             bindingSource1.Filter = "arac ='" + comboBoxEdit_aracArac.Text + "'";
             searchLookUpEditAracMarka.Properties.DataSource = bindingSource1;
             searchLookUpEditAracMarka.Properties.DisplayMember = "marka";
-            searchLookUpEditAracMarka.Properties.ValueMember = "id";
+            searchLookUpEditAracMarka.Properties.ValueMember = "marka";
         }
 
         private void comboBoxEdit_aracArac_SelectedIndexChanged(object sender, EventArgs e)
@@ -290,56 +283,46 @@ namespace LOYAZ
             {
                 if (neredenGelen == "yeni")
                 {
-                    //hangi tablonun ve sekmenin açık olduğunu belirleme
-                    if (xtraTabControl_AnaArac.SelectedTabPage == xtraTabPageKisiselBilgiler)
-                    {//kişisel bilgiler açıksa
-
-                        if (_telefonKontrol != txt_telefon.Text)
-                        {
-                            MySqlCommand komut = new MySqlCommand("insert into musteri(adsoyad,telefon,eposta,adres) values(@adsoyad,@telefon,@eposta,@adres)", _blg.bağlantı());
-                            komut.Parameters.Clear();
-                            komut.Parameters.AddWithValue("@adsoyad", txt_adsoyad.Text);
-                            komut.Parameters.AddWithValue("@telefon", txt_telefon.Text);
-                            komut.Parameters.AddWithValue("@eposta", txt_eposta.Text);
-                            komut.Parameters.AddWithValue("@adres", txt_adres.Text);
-                            komut.ExecuteNonQuery();
-
-                            var frm = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
-                            frm?.gridcontrolgöster();
-
-                            var frmYeni3 = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
-                            frmYeni3?.gridcontrolgöster();
-
-                            MessageBox.Show("" + txt_adsoyad.Text + " isimli müşteri " + Environment.NewLine + "başarıyla kaydedilmiştir.", "KAYIT BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            this.Close();
-                        }
-                        else
-                        {
-                            MessageBox.Show("" + txt_telefon.Text.Trim(new char[] { '(', ')' }) + " Bu numaraya sahip bir kayıt bulunmaktadır." + Environment.NewLine + "" + Environment.NewLine + " kayda devam edilemiyor!", "KAYIT BAŞARISIZ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                    if (xtraTabControl_AnaArac.SelectedTabPage == xtraTabPageAnaArac)
-                    { //arac kısmı açıksa
-
-                        MySqlCommand komut = new MySqlCommand("insert into musteri_arac_lastik(musteriid,arac,marka,seri,model,plaka," +
-                                                              "lastikmarka,jantcap,tabangenislik,kesitoran,yuzendex,mevsim) " +
-                                                              "values(@musteriid,@arac,@marka,@seri,@model,@plaka,@lastikmarka," +
-                                                              "@jantcap,@tabangenislik,@kesitoran,@yuzendex,@mevsim)", _blg.bağlantı());
+                    if (_telefonKontrol != txt_telefon.Text)
+                    {
+                        //Müşteri Bilgileri
+                        MySqlCommand komut = new MySqlCommand("insert into musteri(adsoyad,telefon,eposta,adres) values(@adsoyad,@telefon,@eposta,@adres)", _blg.bağlantı());
                         komut.Parameters.Clear();
-                        komut.Parameters.AddWithValue("@musteriid", musteriid);
-                        komut.Parameters.AddWithValue("@arac", comboBoxEdit_aracArac.EditValue.ToString());
-                        komut.Parameters.AddWithValue("@marka", searchLookUpEditAracMarka.Text);
-                        komut.Parameters.AddWithValue("@seri", lbl_aracSeri.Text);
-                        komut.Parameters.AddWithValue("@model", lbl_AracModel.Text);
-                        komut.Parameters.AddWithValue("@plaka", txt_aracPlaka.Text);
-                        komut.Parameters.AddWithValue("@lastikmarka", comboBoxEdit_lastikMarka.Text);
-                        komut.Parameters.AddWithValue("@jantcap", comboBoxEdit_lastikJantcap.Text);
-                        komut.Parameters.AddWithValue("@tabangenislik", comboBoxEdit_lastikTabanGenislik.Text);
-                        komut.Parameters.AddWithValue("@kesitoran", comboBoxEdit_lastikKesitOrani.Text);
-                        komut.Parameters.AddWithValue("@yuzendeks", comboBoxEdit_lastikYuzEndeks.Text);
-                        komut.Parameters.AddWithValue("@mevsim", comboBoxEdit_lastikMevsim.Text);
+                        komut.Parameters.AddWithValue("@adsoyad", txt_adsoyad.Text);
+                        komut.Parameters.AddWithValue("@telefon", txt_telefon.Text);
+                        komut.Parameters.AddWithValue("@eposta", txt_eposta.Text);
+                        komut.Parameters.AddWithValue("@adres", txt_adres.Text);
                         komut.ExecuteNonQuery();
 
+                        var frm = (frm_ms_anasayfa_panel)Application.OpenForms["frm_ms_anasayfa_panel"];
+                        frm?.gridcontrolgöster();
+                        
+                        //Lastik bilgileri
+                        MySqlCommand komutLastik = new MySqlCommand("insert into musteri_arac_lastik(musteriid,arac,marka,seri,model,plaka," +
+                                                              "lastikmarka,jantcap,tabangenislik,kesitoran,yuzendeks,mevsim) " +
+                                                              "values(@musteriid,@arac,@marka,@seri,@model,@plaka,@lastikmarka," +
+                                                              "@jantcap,@tabangenislik,@kesitoran,@yuzendeks,@mevsim)", _blg.bağlantı());
+                        komutLastik.Parameters.Clear();
+                        komutLastik.Parameters.AddWithValue("@musteriid", musteriid);
+                        komutLastik.Parameters.AddWithValue("@arac", comboBoxEdit_aracArac.EditValue.ToString());
+                        komutLastik.Parameters.AddWithValue("@marka", searchLookUpEditAracMarka.Text);
+                        komutLastik.Parameters.AddWithValue("@seri", lbl_aracSeri.Text);
+                        komutLastik.Parameters.AddWithValue("@model", lbl_AracModel.Text);
+                        komutLastik.Parameters.AddWithValue("@plaka", txt_aracPlaka.Text);
+                        komutLastik.Parameters.AddWithValue("@lastikmarka", comboBoxEdit_lastikMarka.Text);
+                        komutLastik.Parameters.AddWithValue("@jantcap", comboBoxEdit_lastikJantcap.Text);
+                        komutLastik.Parameters.AddWithValue("@tabangenislik", comboBoxEdit_lastikTabanGenislik.Text);
+                        komutLastik.Parameters.AddWithValue("@kesitoran", comboBoxEdit_lastikKesitOrani.Text);
+                        komutLastik.Parameters.AddWithValue("@yuzendeks", comboBoxEdit_lastikYuzEndeks.Text);
+                        komutLastik.Parameters.AddWithValue("@mevsim", comboBoxEdit_lastikMevsim.Text);
+                        komutLastik.ExecuteNonQuery();
+
+                        MessageBox.Show("" + txt_adsoyad.Text + " isimli müşteri " + Environment.NewLine + "başarıyla kaydedilmiştir.", "KAYIT BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("" + txt_telefon.Text.Trim(new char[] { '(', ')' }) + " Bu numaraya sahip bir kayıt bulunmaktadır." + Environment.NewLine + "" + Environment.NewLine + " kayda devam edilemiyor!", "KAYIT BAŞARISIZ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 
